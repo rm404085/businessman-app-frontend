@@ -1,0 +1,158 @@
+[
+  {
+    "id": "aaaa",
+    "title": "Shape of You",
+    "thumbnail": "https://i.ibb.co/L1b6xSq/shape.jpg",
+    "company": {
+      "name": "Olivia Mitchell",
+      "avatar": "https://i.ibb.co/D9wWRM6/olivia.jpg",
+      "verified": false
+    },
+    "views": "100K",
+    "uploaded": "2 weeks ago",
+    "duration": "3:45"
+  },
+  {
+    "id": "aaab",
+    "title": "Midnight Serenade",
+    "thumbnail": "https://i.ibb.co/QPNzYVy/moonlight.jpg",
+    "company": {
+      "name": "Noah Walker",
+      "avatar": "https://i.ibb.co/fDbPv7h/Noha.jpg",
+      "verified": false
+    },
+    "views": "543K",
+    "uploaded": "1 week ago",
+    "duration": "4:12"
+  },
+  {
+    "id": "aaac",
+    "title": "Laugh at My Pain",
+    "thumbnail": "https://i.ibb.co/NTncwqH/luahg-at-pain.jpg",
+    "company": {
+      "name": "Kevin Hart",
+      "avatar": "https://i.ibb.co/XVHM7NP/kevin.jpg",
+      "verified": false
+    },
+    "views": "1.1K",
+    "uploaded": "3 days ago",
+    "duration": "2:55"
+  },
+  {
+    "id": "aaad",
+    "title": "Smells Like Teen Spirit",
+    "thumbnail": "https://i.ibb.co/f9FBQwz/smells.jpg",
+    "company": {
+      "name": "Oliver Harris",
+      "avatar": "https://i.ibb.co/k4tkc42/oliviar-harris.jpg",
+      "verified": true
+    },
+    "views": "5.4K",
+    "uploaded": "2 months ago",
+    "duration": "5:01"
+  },
+  {
+    "id": "aaae",
+    "title": "Inside Amy Schumer",
+    "thumbnail": "https://i.ibb.co/Yc4p5gD/inside-amy.jpg",
+    "company": {
+      "name": "Amy Schumer",
+      "avatar": "https://i.ibb.co/YD2mqH7/amy.jpg",
+      "verified": false
+    },
+    "views": "3.6K",
+    "uploaded": "1 month ago",
+    "duration": "6:20"
+  },
+  {
+    "id": "aaaf",
+    "title": "Sticks & Stones eiirirjdjdjdjdnjjd djjd d did id did ifjnf fdj",
+    "thumbnail": "https://i.ibb.co/5LRQkKF/stick-and-stones.jpg",
+    "company": {
+      "name": "Dave Chappelle",
+      "avatar": "https://i.ibb.co/rdTZrCM/dev.jpg",
+      "verified": true
+    },
+    "views": "113K",
+    "uploaded": "4 weeks ago",
+    "duration": "7:40"
+  },
+  {
+    "id": "aaag",
+    "title": "Sunrise Reverie",
+    "thumbnail": "https://i.ibb.co/DRxB1Wm/sunris.jpg",
+    "company": {
+      "name": "Ava Johnson",
+      "avatar": "https://i.ibb.co/yQFJ42h/ava.jpg",
+      "verified": false
+    },
+    "views": "1.1K",
+    "uploaded": "5 days ago",
+    "duration": "3:15"
+  },
+  {
+    "id": "aaah",
+    "title": "Colors of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  ",
+    "thumbnail": "https://i.ibb.co/hY496Db/coloer-of-the-wind.jpg",
+    "company": {
+      "name": "Ethan Clark",
+      "avatar": "https://i.ibb.co/6r4cx4P/ethen-clack.png",
+      "verified": true
+    },
+    "views": "233K",
+    "uploaded": "3 weeks ago",
+    "duration": "4:59"
+  },
+  {
+    "id": "aaai",
+    "title": "30 Rock",
+    "thumbnail": "https://i.ibb.co/kc8CCFs/30-rock.png",
+    "company": {
+      "name": "Tina Fey",
+      "avatar": "https://i.ibb.co/YZN9rQZ/tina.jpg",
+      "verified": false
+    },
+    "views": "4.5K",
+    "uploaded": "1 year ago",
+    "duration": "8:10"
+  },
+  {
+    "id": "aaaj",
+    "title": "Kid Gorgeous",
+    "thumbnail": "https://i.ibb.co/xgWL3vQ/kid-gorgeous.jpg",
+    "company": {
+      "name": "John Mulaney",
+      "avatar": "https://i.ibb.co/xsfkwN2/john.jpg",
+      "verified": true
+    },
+    "views": "241K",
+    "uploaded": "2 weeks ago",
+    "duration": "9:33"
+  },
+  {
+    "id": "aaak",
+    "title": "Beyond The Pale",
+    "thumbnail": "https://i.ibb.co/ZNggzdm/cake.jpg",
+    "company": {
+      "name": "Jim Gaffigan",
+      "avatar": "https://i.ibb.co/MZ2vbXR/jimm.jpg",
+      "verified": false
+    },
+    "views": "2.6K",
+    "uploaded": "3 months ago",
+    "duration": "10:05"
+  },
+  {
+    "id": "aaal",
+    "title": "Enchanted Harmonies",
+    "thumbnail": "https://i.ibb.co/hdtZYbB/enchnting.jpg",
+    "company": {
+      "name": "Sophia Williams",
+      "avatar": "https://i.ibb.co/jh1q2F3/shopia.jpg",
+      "verified": false
+    },
+    "views": "7.6K",
+    "uploaded": "4 days ago",
+    "duration": "11:22"
+  }
+]
