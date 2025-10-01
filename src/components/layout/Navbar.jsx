@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from "react"
+import { useEffect, useId, useRef, useState } from "react"
 import {
   HashIcon,
   HouseIcon,
@@ -24,6 +24,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import VedioCategory from "../vedioCategory/vedioCategory"
+import { AnimatePresence, motion } from "framer-motion"
 
 const teams = ["Acme Inc.", "Origin UI", "Junon"]
 
@@ -36,6 +37,25 @@ export default function Navbar() {
   const id = useId()
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [showSearch, setShowSearch] = useState(false);
+  const searchRef = useRef(null);
+
+  // Outside click detection
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setShowSearch(false);
+      }
+    };
+
+    if (showSearch) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showSearch]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,17 +112,76 @@ export default function Navbar() {
               <Logo />
             </a>
             {/* Search form */}
-            <div className="relative">
-              <Input
-                id={id}
-                className="peer h-8 ps-8 pe-2"
-                placeholder="Search..."
-                type="search" />
-              <div
-                className="text-muted-foreground/80 pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-2 peer-disabled:opacity-50">
-                <SearchIcon size={16} />
-              </div>
-            </div>
+            <div className="relative flex items-center" ref={searchRef}>
+  {/* Search button */}
+  <button
+    type="button"
+    onClick={() => setShowSearch(!showSearch)}
+    className="p-2 text-gray-600 hover:text-blue-600"
+  >
+    <SearchIcon size={20} />
+  </button>
+
+  {/* 🔹 Desktop Expand Search */}
+  <AnimatePresence>
+    {showSearch && (
+      <motion.div
+        initial={{ width: 0, opacity: 0 }}
+        animate={{ width: 280, opacity: 1 }}
+        exit={{ width: 0, opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className="hidden md:block overflow-hidden ml-2"
+      >
+        <Input
+          type="search"
+          placeholder="Search..."
+          className="h-8 px-2 text-sm"
+          autoFocus
+        />
+      </motion.div>
+    )}
+  </AnimatePresence>
+
+  {/* 🔹 Mobile Fullscreen Overlay Search */}
+  <AnimatePresence>
+    {showSearch && (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className="fixed inset-0 bg-black/40 flex items-start md:hidden z-50"
+        onClick={() => setShowSearch(false)} //  overlay তে click করলে close হবে
+      >
+        {/* Inner box (stopPropagation) */}
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="bg-white w-full p-4 relative"
+          onClick={(e) => e.stopPropagation()} //  ভেতরে click করলে বন্ধ হবে না
+        >
+          {/* Close button */}
+          <button
+            onClick={() => setShowSearch(false)}
+            className="absolute top-4 right-4 text-gray-600 hover:text-red-500"
+          >
+            ✕
+          </button>
+
+          <Input
+            type="search"
+            placeholder="Search..."
+            className="w-full h-10 px-3 text-base"
+            autoFocus
+          />
+        </motion.div>
+      </motion.div>
+    )}
+  </AnimatePresence>
+</div>
+
           </div>
         </div>
         {/* Middle area */}
