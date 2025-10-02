@@ -1,6 +1,7 @@
 import { IoMagnetSharp } from "react-icons/io5";
 import { FaPhotoVideo, FaShoppingCart, FaShareAlt, FaMagnet } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router";
 
 
 const VideoCard = ({ video }) => {
@@ -89,9 +90,10 @@ const VideoCard = ({ video }) => {
 
       {/* Action Buttons */}
       <div className="flex justify-around border-t p-2 text-lg text-gray-600">
+       <Link to="/photo">
         <button className="flex items-center gap-1  hover:scale-125  hover:text-yellow-900">
           <FaPhotoVideo /> Photo
-        </button>
+        </button></Link>
         <button className="flex items-center gap-1  hover:scale-125  hover:text-green-600">
           <FaShoppingCart /> Order
         </button>

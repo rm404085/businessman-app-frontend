@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router"; // ✅ useLocation import
 import {
   IoHome,
   IoBuild,
@@ -33,6 +32,8 @@ const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [showFirstHalf, setShowFirstHalf] = useState(true);
 
+  const location = useLocation(); // ✅ current path পাওয়ার জন্য
+
   // Detect screen size (mobile or laptop)
   useEffect(() => {
     const checkScreen = () => {
@@ -47,11 +48,9 @@ const Footer = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // নিচের দিকে scroll করলে
         setShowFooter(true);
         if (isMobile) setShowFirstHalf(false);
       } else {
-        // উপরের দিকে scroll করলে
         setShowFooter(true);
         if (isMobile) setShowFirstHalf(true);
       }
@@ -77,32 +76,48 @@ const Footer = () => {
     >
       {isMobile ? (
         //  Mobile View
-        <div className="mx-auto max-w-6xl px-6 py-4 flex justify-between gap-6">
-          {visibleItems.map((item, idx) => (
-            <Link
-              key={idx}
-              to={item.path}
-              className="flex flex-col items-center text-gray-700 hover:text-blue-600 text-xs font-medium"
-            >
-              <span className="text-lg">{item.icon}</span>
-              {item.name}
-            </Link>
-          ))}
-        </div>
-      ) : (
-        // Laptop View
-        <div className="bg-white/90 backdrop-blur border-t border-gray-200">
-          <div className="mx-auto  px-6 py-4 flex justify-center items-center flex-row gap-4 flex-wrap">
-            {visibleItems.map((item, idx) => (
+        <div className="mx-auto max-w-6xl px-6 py-4 flex justify-between gap-6 bg-white/90 backdrop-blur border-t border-gray-200">
+          {visibleItems.map((item, idx) => {
+            const isActive = location.pathname === item.path;
+            return (
               <Link
                 key={idx}
                 to={item.path}
-                className="flex items-center gap-4 text-gray-700 hover:text-white hover:bg-blue-600 transition-colors text-sm md:text-base rounded-lg py-2 px-2"
+                className={`flex flex-col items-center text-xs font-medium transition ${
+                  isActive
+                    ? "text-blue-600"
+                    : "text-gray-700 hover:text-blue-600"
+                }`}
               >
-                <span className="text-lg">{item.icon}</span>
+                <span className={`text-lg ${isActive ? "text-blue-600" : ""}`}>
+                  {item.icon}
+                </span>
                 {item.name}
               </Link>
-            ))}
+            );
+          })}
+        </div>
+      ) : (
+        // Laptop View
+        <div className="bg-white/90  backdrop-blur border-t border-gray-200">
+          <div className="mx-auto w-full px-6 py-4 flex justify-between items-center gap-4">
+            {visibleItems.map((item, idx) => {
+              const isActive = location.pathname === item.path;
+              return (
+                <Link
+                  key={idx}
+                  to={item.path}
+                  className={`flex items-center gap-2 text-sm md:text-base rounded-xl py-2 px-3 transition ${
+                    isActive
+                  ? "bg-gradient-to-r from-purple-600 to-violet-900 text-white shadow-md shadow-purple-800 scale-105 border  border-b-4  border-r-4 border-t-0 bg-clip-padding"
+      : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+                  }`}
+                >
+                  <span className="text-lg">{item.icon}</span>
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}

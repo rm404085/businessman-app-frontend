@@ -10,7 +10,9 @@
     },
     "views": "100K",
     "uploaded": "2 weeks ago",
-    "duration": "3:45"
+    "duration": "3:45",
+    "category": "shirt",
+    "brand": "Nike"
   },
   {
     "id": "aaab",
@@ -23,7 +25,9 @@
     },
     "views": "543K",
     "uploaded": "1 week ago",
-    "duration": "4:12"
+    "duration": "4:12",
+    "category": "shirt",
+    "brand": "Adidas"
   },
   {
     "id": "aaac",
@@ -36,7 +40,9 @@
     },
     "views": "1.1K",
     "uploaded": "3 days ago",
-    "duration": "2:55"
+    "duration": "2:55",
+    "category": "pant",
+    "brand": "Levis"
   },
   {
     "id": "aaad",
@@ -49,7 +55,9 @@
     },
     "views": "5.4K",
     "uploaded": "2 months ago",
-    "duration": "5:01"
+    "duration": "5:01",
+    "category": "pant",
+    "brand": "Lee"
   },
   {
     "id": "aaae",
@@ -62,11 +70,13 @@
     },
     "views": "3.6K",
     "uploaded": "1 month ago",
-    "duration": "6:20"
+    "duration": "6:20",
+    "category": "shoe",
+    "brand": "Bata"
   },
   {
     "id": "aaaf",
-    "title": "Sticks & Stones eiirirjdjdjdjdnjjd djjd d did id did ifjnf fdj",
+    "title": "Sticks & Stones",
     "thumbnail": "https://i.ibb.co/5LRQkKF/stick-and-stones.jpg",
     "company": {
       "name": "Dave Chappelle",
@@ -75,7 +85,9 @@
     },
     "views": "113K",
     "uploaded": "4 weeks ago",
-    "duration": "7:40"
+    "duration": "7:40",
+    "category": "shoe",
+    "brand": "Apex"
   },
   {
     "id": "aaag",
@@ -88,11 +100,13 @@
     },
     "views": "1.1K",
     "uploaded": "5 days ago",
-    "duration": "3:15"
+    "duration": "3:15",
+    "category": "mobile",
+    "brand": "Samsung"
   },
   {
     "id": "aaah",
-    "title": "Colors of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  of the Wind 4yrojkd r ir fdi de ew re fe fifnkd jfjsdk jsjs jsm djd jfdsmfjds mf jds s  ",
+    "title": "Colors of the Wind",
     "thumbnail": "https://i.ibb.co/hY496Db/coloer-of-the-wind.jpg",
     "company": {
       "name": "Ethan Clark",
@@ -101,7 +115,9 @@
     },
     "views": "233K",
     "uploaded": "3 weeks ago",
-    "duration": "4:59"
+    "duration": "4:59",
+    "category": "mobile",
+    "brand": "Apple"
   },
   {
     "id": "aaai",
@@ -114,7 +130,9 @@
     },
     "views": "4.5K",
     "uploaded": "1 year ago",
-    "duration": "8:10"
+    "duration": "8:10",
+    "category": "laptop",
+    "brand": "Dell"
   },
   {
     "id": "aaaj",
@@ -127,7 +145,9 @@
     },
     "views": "241K",
     "uploaded": "2 weeks ago",
-    "duration": "9:33"
+    "duration": "9:33",
+    "category": "laptop",
+    "brand": "HP"
   },
   {
     "id": "aaak",
@@ -140,7 +160,9 @@
     },
     "views": "2.6K",
     "uploaded": "3 months ago",
-    "duration": "10:05"
+    "duration": "10:05",
+    "category": "laptop",
+    "brand": "Asus"
   },
   {
     "id": "aaal",
@@ -153,6 +175,8 @@
     },
     "views": "7.6K",
     "uploaded": "4 days ago",
-    "duration": "11:22"
+    "duration": "11:22",
+    "category": "laptop",
+    "brand": "MacBook"
   }
 ]

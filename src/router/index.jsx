@@ -1,8 +1,10 @@
 import App from "@/App";
 import About from "@/page/about/About";
+import CetagoryPage from "@/page/cetagoryPage/CetagoryPage";
 import HomePage from "@/page/homePage/HomePage";
 import Live from "@/page/live/Live";
 import Manufacture from "@/page/manufacture/Manufacture";
+import Photo from "@/page/photo/Photo";
 import { createBrowserRouter } from "react-router";
 
 
@@ -17,6 +19,10 @@ export const router = createBrowserRouter(
                     index:true,
                 },
                 {
+                    Component:CetagoryPage,
+                    path:"/category/:categoryName",
+                },
+                {
                     Component:About,
                     path:"about",
                 },
@@ -27,6 +33,10 @@ export const router = createBrowserRouter(
                 {
                     Component:Live,
                     path:"live"
+                },
+                {
+                    Component:Photo,
+                    path:"photo"
                 }
             ]
            

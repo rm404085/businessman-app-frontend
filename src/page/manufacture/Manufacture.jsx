@@ -3,7 +3,7 @@ import HomePage from "../homePage/HomePage";
 const Manufacture = () =>{
 
     return(
-        <div className="mt-52">
+        <div className="mt-22">
           <HomePage></HomePage>
         </div>
     )
