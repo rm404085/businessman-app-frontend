@@ -1,8 +1,10 @@
 import VideoCard from "@/components/card/VideoCard";
+
 import { useEffect, useState } from "react";
 
 const HomePage = ({ category, brand }) => {
   const [videos, setVideos] = useState([]);
+   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/vedio.json")
@@ -25,12 +27,29 @@ const HomePage = ({ category, brand }) => {
         }
 
         setVideos(filtered);
+        setLoading(false)
       })
       .catch((err) => console.error("Error fetching videos:", err));
   }, [category, brand]);
 
+    if (loading) {
+    // 🔹 Loader দেখাবে যতক্ষণ data আসেনি
+    return (
+      <div className="flex items-center gap-4 justify-center h-screen">
+        <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-pulse">
+          
+        </div>
+        <div className="text-2xl">
+          loading...
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="grid grid-cols-1 mt-28 mb-20 sm:grid-cols-2 m-0 md:grid-cols-3 gap-6 ">
+    <div>
+       
+      <div className="grid grid-cols-1 mt-8 mb-20 sm:grid-cols-2 m-0 md:grid-cols-3 gap-2 ">
       {videos.length > 0 ? (
         videos.map((video) => <VideoCard key={video.id} video={video} />)
       ) : (
@@ -39,6 +58,8 @@ const HomePage = ({ category, brand }) => {
         </p>
       )}
     </div>
+    </div>
+
   );
 };
 

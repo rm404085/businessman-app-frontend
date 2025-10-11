@@ -4,7 +4,10 @@ import CetagoryPage from "@/page/cetagoryPage/CetagoryPage";
 import HomePage from "@/page/homePage/HomePage";
 import Live from "@/page/live/Live";
 import Manufacture from "@/page/manufacture/Manufacture";
+import NotFound from "@/page/notFound/NotFound";
 import Photo from "@/page/photo/Photo";
+import Shorts from "@/page/short/Shorts";
+
 import { createBrowserRouter } from "react-router";
 
 
@@ -37,6 +40,14 @@ export const router = createBrowserRouter(
                 {
                     Component:Photo,
                     path:"photo"
+                },
+                {
+                    path:"/short",
+                    element:<Shorts></Shorts>
+                },
+                {
+                    path:"*",
+                    Component:NotFound
                 }
             ]
            

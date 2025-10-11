@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "title": "Automated Car Assembly Line in Action 🚗",
+    "src": "https://cdn.videvo.net/videvo_files/video/free/2021-07/small_watermarked/210701_03_CarFactory_4k_019_preview.webm",
+    "description": "Watch the precision engineering behind modern car manufacturing. From robotic arms to conveyor systems, this is where technology meets speed.",
+    "photos": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a",
+      "https://images.unsplash.com/photo-1581092795360-58b67a62a26e",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a"
+    ],
+    "comments": [
+      { "user": "JohnD", "text": "Amazing automation!" },
+      { "user": "TechGuy", "text": "Those robots move so fast!" }
+    ],
+    "company": {
+      "name": "AutoNova Ltd",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "tagline": "Driven by Innovation"
+    },
+    "duration": "0:31",
+    "views": "25.6K",
+    "uploaded": "1 day ago",
+    "line": "Precision & Power"
+  },
+  {
+    "id": 2,
+    "title": "Modern Furniture Manufacturing Process 🔥",
+    "src": "https://cdn.videvo.net/videvo_files/video/free/2021-09/small_watermarked/210902_02_Workshop_4k_016_preview.webm",
+    "description": "A beautiful look into how furniture is crafted with precision tools and creative designs in modern factories.",
+    "photos": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+      "https://images.unsplash.com/photo-1581092339609-2c93c5d6a7c9",
+      "https://images.unsplash.com/photo-1572980500508-9b1bdf42c31a"
+    ],
+    "comments": [
+      { "user": "CraftLover", "text": "Love the craftsmanship!" },
+      { "user": "WoodMan", "text": "That finish is gorgeous." }
+    ],
+    "company": {
+      "name": "Elite Furnish Ltd",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "tagline": "Innovating Wood Crafting"
+    },
+    "duration": "0:28",
+    "views": "14.2K",
+    "uploaded": "2 days ago",
+    "line": "Wood Perfection"
+  },
+  {
+    "id": 3,
+    "title": "Handmade Jewelry Design Timelapse ✨",
+    "src": "https://cdn.videvo.net/videvo_files/video/free/2022-04/small_watermarked/220401_02_Jewelry_1080p_015_preview.webm",
+    "description": "An artistic timelapse of handcrafted jewelry making — a fusion of creativity, patience, and precision.",
+    "photos": [
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3",
+      "https://images.unsplash.com/photo-1518544801958-efcbf8a7ec10"
+    ],
+    "comments": [
+      { "user": "JewelryQueen", "text": "Stunning detail!" },
+      { "user": "ArtFan", "text": "This is so satisfying to watch." }
+    ],
+    "company": {
+      "name": "ShineArt Co.",
+      "avatar": "https://i.pravatar.cc/150?img=45",
+      "tagline": "Luxury by Hand"
+    },
+    "duration": "0:32",
+    "views": "23.4K",
+    "uploaded": "1 week ago",
+    "line": "Pure Elegance"
+  },
+  {
+    "id": 4,
+    "title": "Smartphone Assembly Line — Behind The Scenes 📱",
+    "src": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190917_01_Smartphone_4k_006_preview.webm",
+    "description": "Step inside the smartphone assembly line and see how cutting-edge devices are built piece by piece.",
+    "photos": [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      "https://images.unsplash.com/photo-1542751110-97427bbecf20"
+    ],
+    "comments": [
+      { "user": "GadgetGeek", "text": "Incredible precision!" },
+      { "user": "Engineer101", "text": "This is next-level production." }
+    ],
+    "company": {
+      "name": "TechOne Factory",
+      "avatar": "https://i.pravatar.cc/150?img=9",
+      "tagline": "Building the Future"
+    },
+    "duration": "0:29",
+    "views": "41.8K",
+    "uploaded": "5 hours ago",
+    "line": "Innovation Lab"
+  }
+]

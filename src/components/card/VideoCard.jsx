@@ -1,11 +1,14 @@
 import { IoMagnetSharp } from "react-icons/io5";
-import { FaPhotoVideo, FaShoppingCart, FaShareAlt, FaMagnet } from "react-icons/fa";
+import { FaPhotoVideo, FaShoppingCart, FaShareAlt } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router";
+import ReactPlayer from "react-player";
+import {motion} from "framer-motion"
 
 
 const VideoCard = ({ video }) => {
   const [expanded, setExpanded] = useState(false);
+  const [hovered, setHovered] = useState(false);
 
   const shortText = video.title.slice(0, 100);
   return (
@@ -55,31 +58,49 @@ const VideoCard = ({ video }) => {
 
       {/* Thumbnail */}
       <div className="relative hover:shadow-md cursor-pointer transform transition-all hover:scale-95">
-  <img
-    src={video.thumbnail}
-    alt={video.title}
-    className="w-full h-60 object-cover rounded-sm"
-  />
-
-  {/* Play Icon Center */}
-  <div className="absolute inset-0 flex items-center justify-center">
-    <div className="bg-black/60 p-4 rounded-full">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="white"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="white"
-        className="w-8 h-8"
+    {/* --------- Video Player ---------- */}
+      <motion.div
+        onMouseEnter={() => setHovered(true)} // ✅ hover enter
+        onMouseLeave={() => setHovered(false)} // ✅ hover leave
+        whileHover={{ scale: 0.97 }}
+        className="relative cursor-pointer"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M5.25 5.25l13.5 6.75-13.5 6.75V5.25z"
+        <ReactPlayer
+          url={video.thumbnail}           // video source
+          controls={hovered}         // only show controls on hover
+          playing={hovered}          // autoplay on hover
+          muted={!hovered}           // default muted
+          width="100%"
+          height="240px"
         />
-      </svg>
-    </div>
-  </div>
+
+        {/* Optional Play Overlay */}
+        {!hovered && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="bg-black/60 p-4 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="white"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5.25 5.25l13.5 6.75-13.5 6.75V5.25z"
+                />
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* Duration */}
+        <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
+          {video.duration}
+        </span>
+      </motion.div>
 
   {/* Duration Badge */}
   <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-1 py-0.5 rounded">

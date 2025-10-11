@@ -2,29 +2,41 @@
   {
     "id": 1,
     "user": { "name": "John Doe", "avatar": "https://i.pravatar.cc/100?img=3" },
-    "time": "2 hrs ago",
+    "time": "2 h",
     "text": "Enjoying the beautiful sunset 🌅",
     "image": "https://images.unsplash.com/photo-1501973801540-537f08ccae7b",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
+
     "likes": 23,
     "comments": 5,
     "shares": 2
   },
-  {
-    "id": 2,
-    "user": { "name": "Jane Smith", "avatar": "https://i.pravatar.cc/100?img=5" },
-    "time": "1 day ago",
-    "text": "My new photography gear 📸",
-    "image": "https://images.unsplash.com/photo-1519183071298-a2962be90b8e",
-    "likes": 56,
-    "comments": 12,
-    "shares": 4
-  },
+  
   {
     "id": 3,
     "user": { "name": "Michael Brown", "avatar": "https://i.pravatar.cc/100?img=8" },
-    "time": "3 hrs ago",
+    "time": "3 h",
     "text": "Weekend hiking adventure 🏞️",
     "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
     "likes": 102,
     "comments": 18,
     "shares": 7
@@ -32,9 +44,19 @@
   {
     "id": 4,
     "user": { "name": "Emily Davis", "avatar": "https://i.pravatar.cc/100?img=9" },
-    "time": "5 hrs ago",
+    "time": "5 h",
     "text": "Trying out some new recipes 🍝",
     "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
     "likes": 78,
     "comments": 20,
     "shares": 10
@@ -42,9 +64,19 @@
   {
     "id": 5,
     "user": { "name": "Chris Johnson", "avatar": "https://i.pravatar.cc/100?img=11" },
-    "time": "30 mins ago",
+    "time": "30 m",
     "text": "Chilling with friends 🎉",
     "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
     "likes": 34,
     "comments": 7,
     "shares": 1
@@ -52,9 +84,19 @@
   {
     "id": 6,
     "user": { "name": "Sophia Lee", "avatar": "https://i.pravatar.cc/100?img=15" },
-    "time": "2 days ago",
+    "time": "2 d",
     "text": "Nature always amazes me 🌿",
     "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
     "likes": 145,
     "comments": 33,
     "shares": 15
@@ -62,9 +104,19 @@
   {
     "id": 7,
     "user": { "name": "Daniel Kim", "avatar": "https://i.pravatar.cc/100?img=20" },
-    "time": "6 hrs ago",
+    "time": "6 h",
     "text": "City lights never disappoint ✨",
     "image": "https://images.unsplash.com/photo-1499346030926-9a72daac6c63",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
     "likes": 67,
     "comments": 11,
     "shares": 5
@@ -72,9 +124,19 @@
   {
     "id": 8,
     "user": { "name": "Olivia White", "avatar": "https://i.pravatar.cc/100?img=22" },
-    "time": "3 days ago",
+    "time": "3 d",
     "text": "Beach vibes 🏖️",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+     "gallery": [
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200",
+    "https://picsum.photos/id/1015/200/200",
+    "https://picsum.photos/id/1025/200/200",
+    "https://picsum.photos/id/1035/200/200",
+    "https://picsum.photos/id/1045/200/200"
+  ],
     "likes": 210,
     "comments": 45,
     "shares": 25
