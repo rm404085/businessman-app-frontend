@@ -26,68 +26,86 @@ const ShortCard = ({ short }) => {
     <div className="flex flex-col rounded-sm lg:h-[600px] lg:flex-row w-full h-screen bg-black text-white">
 
       {/* VIDEO */}
-      <div className="relative w-full lg:w-1/3 h-screen lg:h-[80vh] flex-shrink-0">
-        <ReactPlayer
-          url={short.src}
-          playing={hovered}
-          loop
-          muted={!hovered}
-          controls={hovered}
-          width="100%"
-          height="100%"
-        />
+      {/* 🎬 VIDEO CONTAINER */}
+<div
+  className="relative w-full lg:w-1/3 h-screen lg:h-[80vh] flex-shrink-0 group"
+  onMouseEnter={() => setHovered(true)}
+  onMouseLeave={() => setHovered(false)}
+>
+  {/* 🖥️ VIDEO PLAYER */}
+  <ReactPlayer
+    url={short.src}
+    playing={hovered}
+    loop
+    muted={!hovered}
+    controls={hovered}
+    width="100%"
+    height="100%"
+    className="pointer-events-auto cursor-pointer"
+  />
 
-        {/* MOBILE PROFILE */}
-        {/* MOBILE PROFILE */}
-{/* MOBILE PROFILE */}
-<div className="absolute top-3 left-0 right-0 flex items-center justify-center md:hidden z-20">
-  {/* Avatar left */}
-  <div className="absolute left-3">
-    <img
-      src={short.company.avatar}
-      alt={short.company.name}
-      className="w-8 h-8 rounded-full border border-white/40"
-    />
+  {/* 📱 MOBILE PROFILE BAR */}
+  <div className="absolute top-3 left-0 right-0 flex items-center justify-center md:hidden z-20 bg-black/30 backdrop-blur-sm py-1 rounded-full mx-2">
+    {/* Avatar left */}
+    <div className="absolute left-3 flex items-center">
+      <img
+        src={short.company.avatar}
+        alt={short.company.name}
+        className="w-8 h-8 rounded-full border border-white/40"
+      />
+    </div>
+
+    {/* Name center */}
+    <span className="text-sm font-semibold text-white truncate max-w-[50%] text-center">
+      {short.company.name}
+    </span>
+
+    {/* Icon right */}
+    <div className="absolute right-3 flex items-center justify-center p-[3px] rounded-full border border-blue-900 hover:shadow-lg cursor-pointer hover:scale-110 transition">
+      <IoMagnetSharp className="text-lg" />
+    </div>
   </div>
 
-  {/* Name center */}
-  <span className="text-sm font-semibold text-white">
-    {short.company.name}
-  </span>
+  {/* 📱 MOBILE TITLE AT BOTTOM */}
+  <div className="absolute bottom-3 left-3 md:hidden bg-black/50 p-2 rounded-md backdrop-blur-sm z-20 w-[95%]">
+    <p className="text-sm font-medium">{short.title}</p>
+  </div>
 
-  {/* Icon right */}
-  <div className="absolute right-3 p-1 rounded-full border border-blue-900 hover:shadow-lg cursor-pointer hover:scale-110">
-    <IoMagnetSharp className="text-xl" />
+  {/* 📱 MOBILE ACTION BUTTONS (Right side) */}
+  <div className="absolute right-3 bottom-20 flex flex-col gap-4 lg:hidden z-20">
+    <motion.button
+      whileTap={{ scale: 1.3 }}
+      onClick={() => setLiked(!liked)}
+      className={`p-3 rounded-full bg-black/60 hover:bg-black/80 ${
+        liked ? "text-red-500" : "text-white"
+      }`}
+    >
+      <IoHeart className="text-2xl" />
+    </motion.button>
+
+    <motion.button
+      whileTap={{ scale: 1.2 }}
+      className="p-3 rounded-full bg-black/60 hover:bg-black/80"
+    >
+      <IoChatbubbleEllipses className="text-2xl" />
+    </motion.button>
+
+    <motion.button
+      whileTap={{ scale: 1.2 }}
+      className="p-3 rounded-full bg-black/60 hover:bg-black/80"
+    >
+      <IoShareSocial className="text-2xl" />
+    </motion.button>
+
+    <motion.button
+      whileTap={{ scale: 1.2 }}
+      className="p-3 rounded-full bg-black/60 hover:bg-black/80"
+    >
+      <FaShoppingCart className="text-2xl" />
+    </motion.button>
   </div>
 </div>
 
-
-
-        {/* MOBILE TITLE AT BOTTOM */}
-        <div className="absolute bottom-3 left-3 md:hidden bg-black/50 p-2 rounded-md backdrop-blur-sm z-20 w-[95%]">
-          <p className="text-sm font-medium">{short.title}</p>
-        </div>
-
-        {/* MOBILE ACTION BUTTONS */}
-        <div className="absolute right-3 bottom-20 flex flex-col gap-4 lg:hidden z-20">
-          <motion.button
-            whileTap={{ scale: 1.3 }}
-            onClick={() => setLiked(!liked)}
-            className={`p-3 rounded-full bg-black/60 hover:bg-black/80 ${liked ? "text-red-500" : "text-white"}`}
-          >
-            <IoHeart className="text-2xl" />
-          </motion.button>
-          <motion.button whileTap={{ scale: 1.2 }} className="p-3 rounded-full bg-black/60 hover:bg-black/80">
-            <IoChatbubbleEllipses className="text-2xl" />
-          </motion.button>
-          <motion.button whileTap={{ scale: 1.2 }} className="p-3 rounded-full bg-black/60 hover:bg-black/80">
-            <IoShareSocial className="text-2xl" />
-          </motion.button>
-          <motion.button whileTap={{ scale: 1.2 }} className="p-3 rounded-full bg-black/60 hover:bg-black/80">
-            <FaShoppingCart className="text-2xl" />
-          </motion.button>
-        </div>
-      </div>
 
       {/* INFO PANEL FOR DESKTOP */}
       <div className="hidden lg:flex flex-1 flex-col overflow-y-auto p-4 gap-4 bg-[#0f0f0f] rounded-tr-xl rounded-br-xl shadow-lg">

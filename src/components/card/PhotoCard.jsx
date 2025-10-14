@@ -42,8 +42,9 @@ const PhotoCard = ({ post }) => {
             />
             
           </div>
-          <div>
+          <div >
               <p className="font-semibold">{post.user.name}</p>
+              <span className="text-xs flex justify-center items-center text-gray-500">{post.time}</span>
               
             </div>
 
@@ -85,7 +86,7 @@ const PhotoCard = ({ post }) => {
           </div>
         )}
          </p>
-        <span className="text-sm text-gray-500">{post.time}</span>
+        
        </div>
       </div>
 

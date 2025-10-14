@@ -128,36 +128,7 @@ const ManufactureCard = ({ video }) => {
         <span>{video.uploaded}</span>
       </div>
 
-      {/* --------- Action Buttons ---------- */}
-      <div className="flex justify-around items-center py-3 text-gray-700">
-        <motion.button
-          whileTap={{ scale: 1.2 }}
-          onClick={() => setLiked(!liked)}
-          className={`flex items-center gap-1 ${liked ? "text-red-600" : "hover:text-red-600"}`}
-        >
-          <IoHeart /> {liked ? "Liked" : "Like"}
-        </motion.button>
-
-        <motion.button whileTap={{ scale: 1.2 }} className="flex items-center gap-1 hover:text-blue-600">
-          <IoChatbubbleEllipses /> Comment
-        </motion.button>
-
-        <motion.button whileTap={{ scale: 1.2 }} className="flex items-center gap-1 hover:text-green-600">
-          <IoShareSocial /> Share
-        </motion.button>
-
-        <motion.button
-          whileTap={{ scale: 1.2 }}
-          onClick={() => setSaved(!saved)}
-          className={`flex items-center gap-1 ${saved ? "text-yellow-500" : "hover:text-yellow-500"}`}
-        >
-          <IoBookmark /> {saved ? "Saved" : "Save"}
-        </motion.button>
-
-        <motion.button whileTap={{ scale: 1.2 }} className="flex items-center gap-1 hover:text-indigo-700">
-          <IoDownload /> Download
-        </motion.button>
-      </div>
+      
 
       {/* --------- Extra Links ---------- */}
       <div className="flex justify-around border-t p-3 text-gray-700 text-sm">

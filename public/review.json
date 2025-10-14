@@ -1,0 +1,248 @@
+[
+  {
+    "id": 1,
+    "type": "video",
+    "customer": {
+      "name": "Sagor Ahmed",
+      "photo": "https://i.pravatar.cc/150?img=3"
+    },
+    "company": {
+      "name": "Timber Time",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "tagline": "Luxury in Every Grain"
+    },
+    "review": {
+      "rating": 5,
+      "title": "Best wooden watch I ever bought!",
+      "content": "The texture and finish are premium. Love the natural wood look and comfortable straps.",
+      "description": "I have been collecting watches for years, and this wooden watch exceeded my expectations. The craftsmanship is outstanding and it's very comfortable to wear all day.",
+      "date": "2025-09-12"
+    },
+    "src": "https://videos.pexels.com/video-files/856049/856049-hd_1280_720_24fps.mp4",
+    "gallery": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600",
+      "https://images.unsplash.com/photo-1502767089025-6572583495b1?w=600",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=600"
+    ],
+    "comments": [
+      { "user": "Rafiul", "text": "Wow, looks great!" },
+      { "user": "Nusrat", "text": "Planning to buy one soon!" }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "post",
+    "customer": {
+      "name": "Anika Rahman",
+      "photo": "https://i.pravatar.cc/150?img=15"
+    },
+    "company": {
+      "name": "Urban Edge",
+      "avatar": "https://i.pravatar.cc/150?img=25",
+      "tagline": "Wear Your Attitude"
+    },
+    "review": {
+      "rating": 4,
+      "title": "Trendy and comfortable!",
+      "content": "The fabric is soft and breathable. The fit was perfect and stylish.",
+      "description": "I ordered this outfit for a casual meetup and was impressed by how comfy and chic it feels. Highly recommend for trendy looks.",
+      "date": "2025-08-21"
+    },
+    "photos": [
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600"
+    ],
+    "comments": [
+      { "user": "Farhan", "text": "🔥 Nice outfit!" },
+      { "user": "Nusrat", "text": "Planning to buy one soon!" }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "video",
+    "customer": {
+      "name": "Mehedi Hasan",
+      "photo": "https://i.pravatar.cc/150?img=11"
+    },
+    "company": {
+      "name": "ZenSpaces",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "tagline": "Simplicity Speaks"
+    },
+    "review": {
+      "rating": 5,
+      "title": "Elegant and calming!",
+      "content": "Loved their minimalist design ideas. They made my living room feel twice as spacious!",
+      "description": "ZenSpaces transformed my living area with subtle minimalist design elements. It feels airy, calm, and inviting. Perfect for a modern home.",
+      "date": "2025-07-19"
+    },
+    "src": "https://videos.pexels.com/video-files/855434/855434-hd_1280_720_25fps.mp4",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600",
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+      "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=600"
+    ],
+    "comments": [
+      { "user": "Sara", "text": "Exactly what I want for my home!" }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "post",
+    "customer": {
+      "name": "Nusrat Jahan",
+      "photo": "https://i.pravatar.cc/150?img=8"
+    },
+    "company": {
+      "name": "BrewBloom",
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "tagline": "Brew Happiness"
+    },
+    "review": {
+      "rating": 5,
+      "title": "Coffee heaven ☕",
+      "content": "Smooth, aromatic, and rich in flavor. Easily the best coffee I’ve had in months!",
+      "description": "BrewBloom's coffee beans are roasted to perfection. The aroma is inviting, and the taste leaves you wanting more. Ideal for coffee lovers.",
+      "date": "2025-10-02"
+    },
+    "photos": [
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600",
+      "https://images.unsplash.com/photo-1504198458649-3128b932f49f?w=600"
+    ],
+    "comments": [
+      { "user": "Tuhin", "text": "This review made me order one 😅" }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "video",
+    "customer": {
+      "name": "Sagor Ahmed",
+      "photo": "https://i.pravatar.cc/150?img=3"
+    },
+    "company": {
+      "name": "Timber Time",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "tagline": "Luxury in Every Grain"
+    },
+    "review": {
+      "rating": 5,
+      "title": "Best wooden watch I ever bought!",
+      "content": "The texture and finish are premium. Love the natural wood look and comfortable straps.",
+      "description": "I have been collecting watches for years, and this wooden watch exceeded my expectations. The craftsmanship is outstanding and it's very comfortable to wear all day.",
+      "date": "2025-09-12"
+    },
+    "src": "https://videos.pexels.com/video-files/856049/856049-hd_1280_720_24fps.mp4",
+    "gallery": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600",
+      "https://images.unsplash.com/photo-1502767089025-6572583495b1?w=600",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=600"
+    ],
+    "comments": [
+      { "user": "Rafiul", "text": "Wow, looks great!" },
+      { "user": "Nusrat", "text": "Planning to buy one soon!" }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "post",
+    "customer": {
+      "name": "Anika Rahman",
+      "photo": "https://i.pravatar.cc/150?img=15"
+    },
+    "company": {
+      "name": "Urban Edge",
+      "avatar": "https://i.pravatar.cc/150?img=25",
+      "tagline": "Wear Your Attitude"
+    },
+    "review": {
+      "rating": 4,
+      "title": "Trendy and comfortable!",
+      "content": "The fabric is soft and breathable. The fit was perfect and stylish.",
+      "description": "I ordered this outfit for a casual meetup and was impressed by how comfy and chic it feels. Highly recommend for trendy looks.",
+      "date": "2025-08-21"
+    },
+    "photos": [
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600",
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600"
+    ],
+    "comments": [
+      { "user": "Farhan", "text": "🔥 Nice outfit!" },
+      { "user": "Nusrat", "text": "Planning to buy one soon!" }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "video",
+    "customer": {
+      "name": "Mehedi Hasan",
+      "photo": "https://i.pravatar.cc/150?img=11"
+    },
+    "company": {
+      "name": "ZenSpaces",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "tagline": "Simplicity Speaks"
+    },
+    "review": {
+      "rating": 5,
+      "title": "Elegant and calming!",
+      "content": "Loved their minimalist design ideas. They made my living room feel twice as spacious!",
+      "description": "ZenSpaces transformed my living area with subtle minimalist design elements. It feels airy, calm, and inviting. Perfect for a modern home.",
+      "date": "2025-07-19"
+    },
+    "src": "https://videos.pexels.com/video-files/855434/855434-hd_1280_720_25fps.mp4",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600",
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+      "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=600"
+    ],
+    "comments": [
+      { "user": "Sara", "text": "Exactly what I want for my home!" }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "post",
+    "customer": {
+      "name": "Nusrat Jahan",
+      "photo": "https://i.pravatar.cc/150?img=8"
+    },
+    "company": {
+      "name": "BrewBloom",
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "tagline": "Brew Happiness"
+    },
+    "review": {
+      "rating": 5,
+      "title": "Coffee heaven ☕",
+      "content": "Smooth, aromatic, and rich in flavor. Easily the best coffee I’ve had in months!",
+      "description": "BrewBloom's coffee beans are roasted to perfection. The aroma is inviting, and the taste leaves you wanting more. Ideal for coffee lovers.",
+      "date": "2025-10-02"
+    },
+    "photos": [
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600",
+      "https://images.unsplash.com/photo-1504198458649-3128b932f49f?w=600"
+    ],
+    "comments": [
+      { "user": "Tuhin", "text": "This review made me order one 😅" }
+    ]
+  }
+]

@@ -2,8 +2,8 @@
   {
     "id": 1,
     "user": { "name": "John Doe", "avatar": "https://i.pravatar.cc/100?img=3" },
-    "time": "2 h",
-    "text": "Enjoying the beautiful sunset 🌅",
+    "time": "2h",
+    "text": "Enjoying the beautiful sunset Enjoying the beautiful sunset Enjoying the beautiful sunset Enjoying the beautiful sunset Enjoying the beautiful sunset vvv 🌅",
     "image": "https://images.unsplash.com/photo-1501973801540-537f08ccae7b",
      "gallery": [
     "https://picsum.photos/id/1015/200/200",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "user": { "name": "Michael Brown", "avatar": "https://i.pravatar.cc/100?img=8" },
-    "time": "3 h",
+    "time": "3h",
     "text": "Weekend hiking adventure 🏞️",
     "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
      "gallery": [
@@ -44,7 +44,7 @@
   {
     "id": 4,
     "user": { "name": "Emily Davis", "avatar": "https://i.pravatar.cc/100?img=9" },
-    "time": "5 h",
+    "time": "5h",
     "text": "Trying out some new recipes 🍝",
     "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
      "gallery": [
@@ -64,7 +64,7 @@
   {
     "id": 5,
     "user": { "name": "Chris Johnson", "avatar": "https://i.pravatar.cc/100?img=11" },
-    "time": "30 m",
+    "time": "30m",
     "text": "Chilling with friends 🎉",
     "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
      "gallery": [
@@ -83,8 +83,8 @@
   },
   {
     "id": 6,
-    "user": { "name": "Sophia Lee", "avatar": "https://i.pravatar.cc/100?img=15" },
-    "time": "2 d",
+    "user": { "name": "Sophia Lee Sophia Lee Sophia Lee Sophia Lee Sophia Lee Sophia Lee ", "avatar": "https://i.pravatar.cc/100?img=15" },
+    "time": "2 days ago now",
     "text": "Nature always amazes me 🌿",
     "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
      "gallery": [
