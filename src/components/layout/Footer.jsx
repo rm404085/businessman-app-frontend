@@ -20,7 +20,7 @@ const Footer = () => {
     { name: "Manufacture", path: "/manufacture", icon: <IoBuild /> },
     { name: "Live", path: "/live", icon: <IoVideocam /> },
     { name: "Car", path: "/car", icon: <IoCar /> },
-    { name: "Basket", path: "/basket", icon: <IoBasket /> },
+    { name: "Market", path: "/market", icon: <IoBasket /> },
     { name: "Photo", path: "/photo", icon: <IoCamera /> },
     { name: "Require", path: "/require", icon: <IoDocumentText /> },
     { name: "Review", path: "/review", icon: <IoChatbubbles /> },

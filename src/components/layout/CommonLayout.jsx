@@ -1,16 +1,21 @@
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import VedioCategory from "../vedioCategory/VedioCategory";
+import VedioCategory from "../Category/vedioCategory/VedioCategory";
 import {motion} from "framer-motion"
 import Navbar from "./Navbar";
 import { useEffect } from "react";
+import Footer from "./Footer";
+import { useLocation } from "react-router";
 
 const CommonLayout = ({children}) => {
-    const controls = useAnimation();
+  const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.4, // 40% element দেখলে trigger হবে
     triggerOnce: false, // scroll up/down ও trigger হবে
   });
+
+  const location = useLocation();
+  const isMarketPage = location.pathname === "/market";
 
   useEffect(() => {
     if (inView) {
@@ -29,7 +34,9 @@ const CommonLayout = ({children}) => {
     return (
         <div className="min-h-screen flex flex-col">
 <Navbar></Navbar>
-<motion.div
+{
+  !isMarketPage && (
+    <motion.div
       ref={ref}
       variants={variants}
       initial="hidden"
@@ -38,7 +45,10 @@ const CommonLayout = ({children}) => {
     >
       <VedioCategory />
     </motion.div>
+  )
+}
 <div className="grow">{children}</div>
+<Footer></Footer>
 
         </div>
     )

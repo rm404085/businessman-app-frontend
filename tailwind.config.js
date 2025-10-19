@@ -5,8 +5,46 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  safelist: [
+    "from-purple-600",
+    "to-indigo-500",
+    "from-green-500",
+    "to-red-600",
+    "from-indigo-500",
+    "to-blue-500",
+    "from-orange-500",
+    "to-yellow-400",
+    "from-teal-500",
+    "to-cyan-400",
+    "from-sky-500",
+    "to-indigo-500",
+    "from-fuchsia-500",
+    "to-rose-500",
+    "from-blue-500",
+    "to-cyan-500",
+    "from-purple-500",
+    "to-pink-400",
+  ],
   theme: {
   	extend: {
+		 keyframes: {
+        slideUp: {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        slideUp: "slideUp 0.4s ease-out",
+        fadeIn: "fadeIn 0.3s ease-out",
+      },
+    
+  
+
+		
 		fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

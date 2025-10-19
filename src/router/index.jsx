@@ -4,8 +4,10 @@ import CetagoryPage from "@/page/cetagoryPage/CetagoryPage";
 import HomePage from "@/page/homePage/HomePage";
 import Live from "@/page/live/Live";
 import Manufacture from "@/page/manufacture/Manufacture";
+import Market from "@/page/market/Market";
 import NotFound from "@/page/notFound/NotFound";
 import Photo from "@/page/photo/Photo";
+import Rent from "@/page/rent/Rent";
 import Require from "@/page/require/Require";
 import Review from "@/page/review/Review";
 import Shorts from "@/page/short/Shorts";
@@ -59,6 +61,14 @@ export const router = createBrowserRouter(
                 {
                     path:"review",
                     Component:Review
+                },
+                {
+                    path:"market",
+                    Component:Market
+                },
+                {
+                    path:"rent",
+                    Component:Rent,
                 }
             ]
            

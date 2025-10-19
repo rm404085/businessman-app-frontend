@@ -1,0 +1,273 @@
+[
+  {
+    "id": 1,
+    "profile": {
+      "name": "Rahim Ahmed",
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+    },
+    "rentName": "Single Room for Bachelor",
+    "location": "Mirpur, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    ],
+    "videos": [
+      "https://example.com/videos/room1video.mp4"
+    ],
+    "details": "A clean and cozy single room available for bachelor. Near bus stand and market.",
+    "category": "Bachelor",
+    "type": "Room",
+    "price": 4500
+  },
+  {
+    "id": 2,
+    "profile": {
+      "name": "Nusrat Jahan",
+      "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
+    },
+    "rentName": "Family Sublet with 2 Rooms",
+    "location": "Uttara Sector 10, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1572120360610-d971b9b4d6d2",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+    ],
+    "videos": [],
+    "details": "2-room sublet for small family, including balcony and kitchen. 24/7 water & security.",
+    "category": "Family",
+    "type": "Sublet",
+    "price": 12000
+  },
+  {
+    "id": 3,
+    "profile": {
+      "name": "Tanvir Hasan",
+      "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+    },
+    "rentName": "Seat for Male Student",
+    "location": "Mohammadpur, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+    ],
+    "videos": [
+      "https://example.com/videos/seat1video.mp4"
+    ],
+    "details": "Shared room with 2 seats available. WiFi, gas, and electricity included.",
+    "category": "Bachelor",
+    "type": "Seat",
+    "price": 3000
+  },
+  {
+    "id": 4,
+    "profile": {
+      "name": "Farzana Begum",
+      "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91"
+    },
+    "rentName": "Apartment for Family in Gulshan",
+    "location": "Gulshan-2, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572122604757-6a6ebf3da3a3"
+    ],
+    "videos": [],
+    "details": "3-bedroom apartment for family. Close to embassy zone, secure environment.",
+    "category": "Family",
+    "type": "Room",
+    "price": 25000
+  },
+  {
+    "id": 5,
+    "profile": {
+      "name": "Imran Khan",
+      "photo": "https://images.unsplash.com/photo-1502767089025-6572583495b0"
+    },
+    "rentName": "Sublet Office Space / Room",
+    "location": "Banani, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    ],
+    "videos": [],
+    "details": "Office-style room available for sublet. Ideal for small business or startup.",
+    "category": "Sublet",
+    "type": "Room",
+    "price": 18000
+  },
+  {
+    "id": 6,
+    "profile": {
+      "name": "Shamima Akter",
+      "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce"
+    },
+    "rentName": "Girls Seat in Shared Flat",
+    "location": "Dhanmondi, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1526401485004-836a5f53cc4b",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    ],
+    "videos": [],
+    "details": "One seat available for female student in shared flat. Kitchen & laundry shared.",
+    "category": "Bachelor",
+    "type": "Seat",
+    "price": 3500
+  },
+  {
+    "id": 7,
+    "profile": {
+      "name": "Mustafa Rahman",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    "rentName": "Room with Balcony for Bachelor",
+    "location": "Khilgaon, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb"
+    ],
+    "videos": [],
+    "details": "Single room with balcony, near shopping area, suitable for bachelor.",
+    "category": "Bachelor",
+    "type": "Room",
+    "price": 5000
+  },
+  {
+    "id": 8,
+    "profile": {
+      "name": "Afsana Sultana",
+      "photo": "https://images.unsplash.com/photo-1508182316896-4c375cee1e64"
+    },
+    "rentName": "Family Flat in Uttara Sector 4",
+    "location": "Uttara Sector 4, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1572120360610-d971b9b4d6d2",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    ],
+    "videos": [],
+    "details": "2-bed flat suitable for small family, near metro station and shopping mall.",
+    "category": "Family",
+    "type": "Room",
+    "price": 15000
+  },
+  {
+    "id": 9,
+    "profile": {
+      "name": "Rashed Chowdhury",
+      "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce"
+    },
+    "rentName": "Seat for Student in Shared Dorm",
+    "location": "Shahbagh, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+    ],
+    "videos": [],
+    "details": "One seat in shared dormitory for male student. High speed internet included.",
+    "category": "Bachelor",
+    "type": "Seat",
+    "price": 3200
+  },
+  {
+    "id": 10,
+    "profile": {
+      "name": "Mina Begum",
+      "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91"
+    },
+    "rentName": "Large Family Villa for Rent",
+    "location": "Gulshan, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572122604757-6a6ebf3da3a3"
+    ],
+    "videos": [],
+    "details": "Spacious villa with garden and garage. Ideal for big family.",
+    "category": "Family",
+    "type": "Room",
+    "price": 45000
+  },
+  {
+    "id": 11,
+    "profile": {
+      "name": "Al Amin",
+      "photo": "https://images.unsplash.com/photo-1502767089025-6572583495b0"
+    },
+    "rentName": "Room Near University Campus",
+    "location": "Banani, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    ],
+    "videos": [],
+    "details": "Single room near university campus, ideal for a student or bachelor.",
+    "category": "Bachelor",
+    "type": "Room",
+    "price": 4800
+  },
+  {
+    "id": 12,
+    "profile": {
+      "name": "Sumaiya Khan",
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+    },
+    "rentName": "Female Seat in Shared Apartment",
+    "location": "Dhanmondi, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1526401485004-836a5f53cc4b",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    ],
+    "videos": [],
+    "details": "Seat for female student in a safe apartment with other girls. Includes WiFi & utilities.",
+    "category": "Bachelor",
+    "type": "Seat",
+    "price": 3400
+  },
+  {
+    "id": 13,
+    "profile": {
+      "name": "Habib Ullah",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    "rentName": "Sublet 1-BHK for Working Couple",
+    "location": "Mohakhali, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      "https://images.unsplash.com/photo-1572122604757-6a6ebf3da3a3"
+    ],
+    "videos": [],
+    "details": "1-BHK sublet for working couple. Fully furnished with AC and security.",
+    "category": "Sublet",
+    "type": "Room",
+    "price": 20000
+  },
+  {
+    "id": 14,
+    "profile": {
+      "name": "Jannat Ara",
+      "photo": "https://images.unsplash.com/photo-1508182316896-4c375cee1e64"
+    },
+    "rentName": "Room for Family in Khilgaon",
+    "location": "Khilgaon, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+    ],
+    "videos": [],
+    "details": "Room for small family, quiet neighbourhood, near school & market.",
+    "category": "Family",
+    "type": "Room",
+    "price": 11000
+  },
+  {
+    "id": 15,
+    "profile": {
+      "name": "Omar Faruk",
+      "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce"
+    },
+    "rentName": "Student Seat in Shared Flat",
+    "location": "Mirpur-10, Dhaka",
+    "photos": [
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+    ],
+    "videos": [],
+    "details": "Seat available in shared flat for male student. Includes kitchen & WiFi.",
+    "category": "Bachelor",
+    "type": "Seat",
+    "price": 3100
+  }
+]

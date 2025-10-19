@@ -7,9 +7,9 @@ import {
   UsersRound,
 } from "lucide-react"
 
-import Logo from "@/components/logo"
-import NotificationMenu from "@/components/notification-menu"
-import UserMenu from "@/components/user-menu"
+import Logo from "@/components/ui/logo"
+import NotificationMenu from "@/components/ui/notification-menu"
+import UserMenu from "@/components/ui/user-menu"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -23,7 +23,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import VedioCategory from "../vedioCategory/vedioCategory"
+import VedioCategory from "../Category/vedioCategory/vedioCategory"
 import { AnimatePresence, motion } from "framer-motion"
 
 const teams = ["Acme Inc.", "Origin UI", "Junon"]

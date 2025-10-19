@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "user": "Siam Ahmed",
+    "profileColor": "from-purple-600 to-indigo-500",
+    "text": "Looking for a skilled web developer to build a business website!",
+    "media": [
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    ],
+    "time": "2 hours ago"
+  },
+  {
+    "id": 2,
+    "user": "Riya Akter",
+    "profileColor": "from-purple-600 to-indigo-500",
+    "text": "Can anyone suggest a good graphic designer for my startup logo?",
+    "media": [
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    ],
+    "time": "5 hours ago"
+  },
+  {
+    "id": 3,
+    "user": "Rakib Hasan",
+    "profileColor": "from-green-500 to-red-600",
+    "text": "We are hiring a frontend developer (React.js)! Interested candidates can DM.",
+    "media": [
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    ],
+    "time": "1 day ago"
+  },
+  {
+    "id": 4,
+    "user": "Jannat Tania",
+    "profileColor": "from-indigo-500 to-blue-500",
+    "text": "Any freelancer available for Shopify store customization?",
+    "media": [],
+    "time": "3 days ago"
+  },
+  {
+    "id": 5,
+    "user": "Farhan Islam",
+    "profileColor": "from-orange-500 to-yellow-400",
+    "text": "Just completed a portfolio website for a local brand. Check it out!",
+    "media": [
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+     
+    ],
+    "time": "4 days ago"
+  },
+  {
+    "id": 6,
+    "user": "Nusrat Jahan",
+    "profileColor": "from-teal-500 to-cyan-400",
+    "text": "I’m planning to start a clothing business. Need a good photographer for product shots.",
+    "media": [
+      "https://images.unsplash.com/photo-1520975918318-6b1b7d2b2b14",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    ],
+    "time": "5 days ago"
+  },
+  {
+    "id": 7,
+    "user": "Tanvir Hossain",
+    "profileColor": "from-sky-500 to-indigo-500",
+    "text": "Which hosting service is better for eCommerce in Bangladesh?",
+    "media": [
+        "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+      ],
+    "time": "6 days ago"
+  },
+  {
+    "id": 8,
+    "user": "Anika Rahman",
+    "profileColor": "from-fuchsia-500 to-rose-500",
+    "text": "Just launched my handmade crafts store online 🛍️ So excited!",
+    "media": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    ],
+    "time": "1 week ago"
+  },
+  {
+    "id": 9,
+    "user": "Mahmudul Hasan",
+    "profileColor": "from-blue-500 to-cyan-500",
+    "text": "Working on a mobile app for food delivery service. UI is coming together nicely!",
+    "media": [
+      "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    ],
+    "time": "2 weeks ago"
+  },
+  {
+    "id": 10,
+    "user": "Faria Nabila",
+    "profileColor": "from-purple-500 to-pink-400",
+    "text": "Looking for a content writer who can handle social media captions regularly.",
+    "media": [
+    "https://images.unsplash.com/photo-1556740749-887f6717d7e4",
+    "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+      ],
+    "time": "2 weeks ago"
+  }
+]

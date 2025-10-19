@@ -3,13 +3,13 @@ import CommonLayout from './components/layout/CommonLayout';
 import Footer from './components/layout/Footer';
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
 
-  const hideFooterPaths = ["/short"];
-  const showFooter = !hideFooterPaths.some(path =>
-    location.pathname.startsWith(path)
-  );
-  console.log("Current path:", location.pathname, "Show footer?", showFooter);
+  // const hideFooterPaths = ["/short"];
+  // const showFooter = !hideFooterPaths.some(path =>
+  //   location.pathname.startsWith(path)
+  // );
+  // console.log("Current path:", location.pathname, "Show footer?", showFooter);
 
   return (
     <CommonLayout>
@@ -20,7 +20,7 @@ function App() {
         </div>
 
         {/* Footer conditionally */}
-        {showFooter && <Footer />}
+        {/* {showFooter && <Footer />} */}
       </div>
     </CommonLayout>
   );
