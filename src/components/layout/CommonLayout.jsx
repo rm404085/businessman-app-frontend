@@ -16,6 +16,8 @@ const CommonLayout = ({children}) => {
 
   const location = useLocation();
   const isMarketPage = location.pathname === "/market";
+    const isRentPage = location.pathname === "/rent";
+  const isCarPage = location.pathname === "/car";
 
   useEffect(() => {
     if (inView) {
@@ -35,7 +37,7 @@ const CommonLayout = ({children}) => {
         <div className="min-h-screen flex flex-col">
 <Navbar></Navbar>
 {
-  !isMarketPage && (
+  !isMarketPage && !isRentPage && !isCarPage && (
     <motion.div
       ref={ref}
       variants={variants}

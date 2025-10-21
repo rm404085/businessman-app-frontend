@@ -15,6 +15,7 @@ import {
 } from "react-icons/io5";
 
 const Footer = () => {
+  
   const menuItems = [
     { name: "Home", path: "/", icon: <IoHome /> },
     { name: "Manufacture", path: "/manufacture", icon: <IoBuild /> },
@@ -26,6 +27,7 @@ const Footer = () => {
     { name: "Review", path: "/review", icon: <IoChatbubbles /> },
     { name: "Short", path: "/short", icon: <IoPlayCircle /> },
     { name: "Rent", path: "/rent", icon: <IoKey /> },
+    
   ];
 
   const [showFooter, setShowFooter] = useState(true);
@@ -33,6 +35,8 @@ const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [showFirstHalf, setShowFirstHalf] = useState(true);
   const location = useLocation();
+
+  
 
   // Detect screen size
   useEffect(() => {

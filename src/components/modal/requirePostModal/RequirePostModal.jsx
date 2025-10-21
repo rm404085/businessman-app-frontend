@@ -20,7 +20,7 @@ const RequirePostModal = ({
     useEffect(()=>{
         if(!open) return;
 
-         const handleClickOutside = (e) => {
+      const handleClickOutside = (e) => {
       if (modalRef.current && !modalRef.current.contains(e.target)) {
         setOpen(false);
         setMediaPreview(null);

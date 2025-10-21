@@ -1,5 +1,6 @@
 import App from "@/App";
 import About from "@/page/about/About";
+import Car from "@/page/car/Car";
 import CetagoryPage from "@/page/cetagoryPage/CetagoryPage";
 import HomePage from "@/page/homePage/HomePage";
 import Live from "@/page/live/Live";
@@ -69,6 +70,10 @@ export const router = createBrowserRouter(
                 {
                     path:"rent",
                     Component:Rent,
+                },
+                {
+                    path:"car",
+                    Component:Car
                 }
             ]
            
