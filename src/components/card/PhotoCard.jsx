@@ -19,6 +19,7 @@ const PhotoCard = ({ post }) => {
   const [liked, setLiked] = useState(false);
   const [following, setFollowing] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
+  const [mainImage, setMainImage] = useState(post.image); // ✅ main photo state
 
   const toggleText = () => setShowFullText(!showFullText);
 
@@ -29,7 +30,7 @@ const PhotoCard = ({ post }) => {
       : post.text;
 
   return (
-    <div className="bg-white rounded-xl m-1 p-1  shadow hover:shadow-lg transition overflow-hidden">
+    <div className="bg-white rounded-xl m-1 p-1 shadow hover:shadow-lg transition overflow-hidden">
       {/* Header Section */}
       <div className="p-0 pb-0">
         <div className="flex items-center top-0 justify-between mb-3">
@@ -40,15 +41,13 @@ const PhotoCard = ({ post }) => {
               alt={post.user.name}
               className="w-10 h-10 rounded-full"
             />
-            
-          </div>
-          <div >
+            </div>
+            <div>
               <p className="font-semibold">{post.user.name}</p>
               <span className="text-xs flex justify-center items-center text-gray-500">{post.time}</span>
               
             </div>
-
-          {/* Follow + More Button */}
+             {/* Follow + More Button */}
           <div className="flex items-center gap-2">
             <button
               onClick={() => setFollowing(!following)}
@@ -66,35 +65,36 @@ const PhotoCard = ({ post }) => {
               ⋮
             </button>
           </div>
+          
+
+         
         </div>
 
-        {/* 📝 Text Section with "More" functionality */}
-       <div className="flex justify-between">
-         <p>
-          {post.text && (
-          <div className="text-gray-700 text-sm font-medium leading-snug mb-2">
-            {showFullText ? post.text : truncatedText}
-            {post.text.length > 20 && (
-              <button
-                onClick={toggleText}
-                className="text-blue-600 ml-1 font-semibold hover:underline"
-              >
-                {showFullText ? "Show less" : "More"}
-              </button>
+        {/* Text Section */}
+        <div className="flex h-10 justify-between">
+          <p>
+            {post.text && (
+              <div className="text-gray-700 text-sm font-medium leading-snug mb-2">
+                {showFullText ? post.text : truncatedText}
+                {post.text.length > 20 && (
+                  <button
+                    onClick={toggleText}
+                    className="text-blue-600 ml-1 font-semibold hover:underline"
+                  >
+                    {showFullText ? "Show less" : "More"}
+                  </button>
+                )}
+              </div>
             )}
-            
-          </div>
-        )}
-         </p>
-        
-       </div>
+          </p>
+        </div>
       </div>
 
       {/* Main Image */}
       <img
-        src={post.image}
+        src={mainImage} // ✅ mainImage state ব্যবহার
         alt={post.text}
-        className="w-full h-[350px] object-cover"
+        className="w-full h-[350px] object-cover rounded-md"
       />
 
       {/* 🖼️ Scrollable Swiper Gallery */}
@@ -112,7 +112,11 @@ const PhotoCard = ({ post }) => {
                 <img
                   src={img}
                   alt={`slide-${idx}`}
-                  className="rounded-lg w-full h-24 object-cover hover:scale-105 transition-transform duration-300"
+                  className="rounded-lg w-full h-24 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                  // ✅ Click করলে mainImage update হবে
+                  onClick={() => setMainImage(img)}
+                  // ✅ Optional: Hover করলে mainImage update
+                  onMouseEnter={() => setMainImage(img)}
                 />
               </SwiperSlide>
             ))}
@@ -120,7 +124,7 @@ const PhotoCard = ({ post }) => {
         </div>
       )}
 
-      {/* ❤️ Action Buttons */}
+      {/* Action Buttons */}
       <div className="flex justify-around border-t p-2 text-lg text-gray-600">
         <Link to="/photo">
           <button className="flex items-center gap-1 hover:scale-125 hover:text-yellow-900 transition">

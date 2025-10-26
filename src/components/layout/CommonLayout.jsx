@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 import Navbar from "./Navbar";
 import { useEffect } from "react";
 import Footer from "./Footer";
-import { useLocation } from "react-router";
+import { matchPath, useLocation } from "react-router";
 
 const CommonLayout = ({children}) => {
   const controls = useAnimation();
@@ -18,6 +18,8 @@ const CommonLayout = ({children}) => {
   const isMarketPage = location.pathname === "/market";
     const isRentPage = location.pathname === "/rent";
   const isCarPage = location.pathname === "/car";
+  const match = matchPath("/video/:id", location.pathname);
+const isVideoDetails = !!match;
 
   useEffect(() => {
     if (inView) {
@@ -35,9 +37,14 @@ const CommonLayout = ({children}) => {
 
     return (
         <div className="min-h-screen flex flex-col">
+          {
+            !isVideoDetails && (
 <Navbar></Navbar>
+            )
+          }
+
 {
-  !isMarketPage && !isRentPage && !isCarPage && (
+  !isMarketPage && !isRentPage && !isCarPage && !isVideoDetails && (
     <motion.div
       ref={ref}
       variants={variants}
@@ -50,7 +57,13 @@ const CommonLayout = ({children}) => {
   )
 }
 <div className="grow">{children}</div>
-<Footer></Footer>
+{
+  !isVideoDetails && (
+    <Footer></Footer>
+
+  )
+}
+     
 
         </div>
     )

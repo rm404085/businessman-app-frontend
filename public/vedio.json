@@ -12,7 +12,17 @@
     "uploaded": "2 weeks ago",
     "duration": "3:45",
     "category": "shirt",
-    "brand": "Nike"
+    "brand": "Nike",
+    "media": {
+      "video": [
+        "https://cdn.videvo.net/videvo_files/video/free/2021-07/small_watermarked/210701_03_CarFactory_4k_019_preview.webm"
+      ],
+      "photos": [
+        "https://i.ibb.co/sW5T3sR/photo1.jpg",
+        "https://i.ibb.co/5v9jhrM/photo2.jpg",
+        "https://i.ibb.co/QnHnPZF/photo3.jpg"
+      ]
+    }
   },
   {
     "id": "aaab",
@@ -27,7 +37,16 @@
     "uploaded": "1 week ago",
     "duration": "4:12",
     "category": "shirt",
-    "brand": "Adidas"
+    "brand": "Adidas",
+    "media": {
+      "video": [
+        "https://cdn.videvo.net/videvo_files/video/free/2017-12/small_watermarked/171130_05_Hands_4k_021_preview.webm"
+      ],
+      "photos": [
+        "https://i.ibb.co/CBcWbR6/night1.jpg",
+        "https://i.ibb.co/kMSX3hJ/night2.jpg"
+      ]
+    }
   },
   {
     "id": "aaac",
@@ -42,7 +61,17 @@
     "uploaded": "3 days ago",
     "duration": "2:55",
     "category": "pant",
-    "brand": "Levis"
+    "brand": "Levis",
+    "media": {
+      "video": [
+        "https://www.w3schools.com/html/mov_bbb.mp4"
+      ],
+      "photos": [
+        "https://i.ibb.co/JrGf4xJ/fun1.jpg",
+        "https://i.ibb.co/2vhgYB9/fun2.jpg",
+        "https://i.ibb.co/8z1dNMC/fun3.jpg"
+      ]
+    }
   },
   {
     "id": "aaad",
@@ -57,7 +86,16 @@
     "uploaded": "2 months ago",
     "duration": "5:01",
     "category": "pant",
-    "brand": "Lee"
+    "brand": "Lee",
+    "media": {
+      "video": [
+        "https://www.w3schools.com/html/mov_bbb.mp4"
+      ],
+      "photos": [
+        "https://i.ibb.co/Vpm5zvQ/rock1.jpg",
+        "https://i.ibb.co/0MmgjTj/rock2.jpg"
+      ]
+    }
   },
   {
     "id": "aaae",
@@ -72,111 +110,15 @@
     "uploaded": "1 month ago",
     "duration": "6:20",
     "category": "shoe",
-    "brand": "Bata"
-  },
-  {
-    "id": "aaaf",
-    "title": "Sticks & Stones",
-    "thumbnail": "https://i.ibb.co/5LRQkKF/stick-and-stones.jpg",
-    "company": {
-      "name": "Dave Chappelle",
-      "avatar": "https://i.ibb.co/rdTZrCM/dev.jpg",
-      "verified": true
-    },
-    "views": "113K",
-    "uploaded": "4 weeks ago",
-    "duration": "7:40",
-    "category": "shoe",
-    "brand": "Apex"
-  },
-  {
-    "id": "aaag",
-    "title": "Sunrise Reverie",
-    "thumbnail": "https://i.ibb.co/DRxB1Wm/sunris.jpg",
-    "company": {
-      "name": "Ava Johnson",
-      "avatar": "https://i.ibb.co/yQFJ42h/ava.jpg",
-      "verified": false
-    },
-    "views": "1.1K",
-    "uploaded": "5 days ago",
-    "duration": "3:15",
-    "category": "mobile",
-    "brand": "Samsung"
-  },
-  {
-    "id": "aaah",
-    "title": "Colors of the Wind",
-    "thumbnail": "https://i.ibb.co/hY496Db/coloer-of-the-wind.jpg",
-    "company": {
-      "name": "Ethan Clark",
-      "avatar": "https://i.ibb.co/6r4cx4P/ethen-clack.png",
-      "verified": true
-    },
-    "views": "233K",
-    "uploaded": "3 weeks ago",
-    "duration": "4:59",
-    "category": "mobile",
-    "brand": "Apple"
-  },
-  {
-    "id": "aaai",
-    "title": "30 Rock",
-    "thumbnail": "https://i.ibb.co/kc8CCFs/30-rock.png",
-    "company": {
-      "name": "Tina Fey",
-      "avatar": "https://i.ibb.co/YZN9rQZ/tina.jpg",
-      "verified": false
-    },
-    "views": "4.5K",
-    "uploaded": "1 year ago",
-    "duration": "8:10",
-    "category": "laptop",
-    "brand": "Dell"
-  },
-  {
-    "id": "aaaj",
-    "title": "Kid Gorgeous",
-    "thumbnail": "https://i.ibb.co/xgWL3vQ/kid-gorgeous.jpg",
-    "company": {
-      "name": "John Mulaney",
-      "avatar": "https://i.ibb.co/xsfkwN2/john.jpg",
-      "verified": true
-    },
-    "views": "241K",
-    "uploaded": "2 weeks ago",
-    "duration": "9:33",
-    "category": "laptop",
-    "brand": "HP"
-  },
-  {
-    "id": "aaak",
-    "title": "Beyond The Pale",
-    "thumbnail": "https://i.ibb.co/ZNggzdm/cake.jpg",
-    "company": {
-      "name": "Jim Gaffigan",
-      "avatar": "https://i.ibb.co/MZ2vbXR/jimm.jpg",
-      "verified": false
-    },
-    "views": "2.6K",
-    "uploaded": "3 months ago",
-    "duration": "10:05",
-    "category": "laptop",
-    "brand": "Asus"
-  },
-  {
-    "id": "aaal",
-    "title": "Enchanted Harmonies",
-    "thumbnail": "https://i.ibb.co/hdtZYbB/enchnting.jpg",
-    "company": {
-      "name": "Sophia Williams",
-      "avatar": "https://i.ibb.co/jh1q2F3/shopia.jpg",
-      "verified": false
-    },
-    "views": "7.6K",
-    "uploaded": "4 days ago",
-    "duration": "11:22",
-    "category": "laptop",
-    "brand": "MacBook"
+    "brand": "Bata",
+    "media": {
+      "video": [
+        "https://www.w3schools.com/html/mov_bbb.mp4"
+      ],
+      "photos": [
+        "https://i.ibb.co/qgHR0Mn/amy1.jpg",
+        "https://i.ibb.co/zxx5PNh/amy2.jpg"
+      ]
+    }
   }
 ]

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaCarAlt } from "react-icons/fa";
 
 const carLocationData = {
   Dhaka: {
@@ -40,10 +41,18 @@ const CarDropdown = () => {
   const [union, setUnion] = useState("");
   const [village, setVillage] = useState("");
 
+  // ✅ Button enable condition (if any field is selected)
+  const isAnySelected = division || district || thana || union || village;
+
   return (
-    <div className="w-full lg:w-[1200px] mx-auto mt-10 bg-gray-100 p-6 rounded-xl shadow-md flex flex-col lg:flex-row gap-4">
-      <h2 className="text-xl font-semibold text-gray-700 text-center">
-        🚗 Car Rent Location
+    <div className="w-full mx-auto mt-10 bg-gray-100 p-6 rounded-xl shadow-md flex flex-col lg:justify-center lg:items-center lg:flex-row gap-4">
+      <h2 className="text-xl flex gap-3 justify-center items-center font-semibold text-gray-700 text-center">
+        <span>
+          <FaCarAlt></FaCarAlt>
+        </span>
+        <span>
+           Car Rent Location
+        </span>
       </h2>
 
       {/* Division */}
@@ -56,7 +65,7 @@ const CarDropdown = () => {
           setUnion("");
           setVillage("");
         }}
-        className="border p-2 rounded"
+        className="border p-2 rounded-lg"
       >
         <option value="">Select Division</option>
         {Object.keys(carLocationData).map((div) => (
@@ -136,15 +145,20 @@ const CarDropdown = () => {
         </select>
       )}
 
-      {/* Done Button */}
+      {/* ✅ Done Button */}
       <button
         onClick={() => {
           alert(
             `Selected:\nDivision: ${division}\nDistrict: ${district}\nThana: ${thana}\nUnion: ${union}\nVillage: ${village}`
           );
         }}
-        disabled={!village}
-        className="bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition disabled:bg-gray-400"
+        disabled={!isAnySelected}
+        className={`px-6 py-2 rounded-lg font-medium text-white transition 
+          ${
+            isAnySelected
+              ? "bg-blue-600 hover:bg-blue-700"
+              : "bg-gray-400 cursor-not-allowed"
+          }`}
       >
         Done
       </button>

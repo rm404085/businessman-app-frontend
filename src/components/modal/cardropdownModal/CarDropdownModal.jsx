@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../cardropdownModal/slider.css"
+import "../cardropdownModal/slider.css";
 import {
   FaAmbulance,
   FaTruckMoving,
@@ -10,6 +10,7 @@ import {
   FaTaxi,
   FaBicycle,
 } from "react-icons/fa";
+import { IoCar } from "react-icons/io5";
 
 const carCategoryData = [
   { name: "Ambulance", icon: FaAmbulance },
@@ -64,14 +65,32 @@ const CarDropdownModal = ({ setOpenModal, setSelectedCar, setSelectedLocation })
     setOpenModal(false);
   };
 
+  const handleBackgroundClick = (e) => {
+    if (e.target.id === "modalBackground") {
+      setOpenModal(false);
+    }
+  };
+
   return (
-    <div className="fixed h-full inset-0 bg-black/40 flex items-start justify-center z-50 overflow-y-auto">
-      <div
-        className="bg-white rounded-2xl p-6 shadow-2xl w-[95%] max-w-2xl mt-10
-                   animate-slideDown transition-all duration-500"
-      >
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-          🚗 Select Car & Location
+    <div
+      id="modalBackground"
+      onClick={handleBackgroundClick}
+      className="fixed h-full inset-0 bg-black/40 flex items-start justify-center z-50 overflow-y-auto"
+    >
+      <div className="bg-white rounded-2xl p-6 shadow-2xl w-[95%] max-w-2xl mt-10 animate-slideDown transition-all duration-500 relative">
+        {/* Close Button */}
+        <button
+          onClick={() => setOpenModal(false)}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold"
+        >
+          ×
+        </button>
+
+        <h2 className="text-2xl flex gap-2 justify-center items-center flex-row font-semibold text-gray-800 mb-6 text-center">
+          <span>
+            <IoCar />
+          </span>
+          <span>Select Car & Location</span>
         </h2>
 
         {/* ===== CAR CATEGORY ===== */}
@@ -101,6 +120,7 @@ const CarDropdownModal = ({ setOpenModal, setSelectedCar, setSelectedLocation })
         {/* ===== LOCATION SELECTION ===== */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {/* Division */}
+          <label htmlFor="" className="text-2xl font-bold">Location</label>
           <select
             value={division}
             onChange={(e) => {
@@ -192,9 +212,9 @@ const CarDropdownModal = ({ setOpenModal, setSelectedCar, setSelectedLocation })
         {/* ===== DONE BUTTON ===== */}
         <button
           onClick={handleDone}
-          disabled={!car || !village}
+          disabled={!car || !division}
           className={`mt-6 w-full ${
-            car && village
+            car && division
               ? "bg-blue-700 hover:bg-blue-800"
               : "bg-gray-400 cursor-not-allowed"
           } text-white py-2 rounded-lg font-semibold transition`}

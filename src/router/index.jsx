@@ -1,4 +1,5 @@
 import App from "@/App";
+import VideoDetails from "@/components/details/videoDetails/VideoDetails";
 import About from "@/page/about/About";
 import Car from "@/page/car/Car";
 import CetagoryPage from "@/page/cetagoryPage/CetagoryPage";
@@ -13,71 +14,71 @@ import Require from "@/page/require/Require";
 import Review from "@/page/review/Review";
 import Shorts from "@/page/short/Shorts";
 
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
 
-export const router = createBrowserRouter(
-    [
-        {   
-             Component:App,
-            path:"/",
-            children:[
-                {
-                    Component:HomePage,
-                    index:true,
-                },
-                {
-                    Component:CetagoryPage,
-                    path:"/category/:categoryName",
-                },
-                {
-                    Component:About,
-                    path:"about",
-                },
-                {
-                    Component:Manufacture,
-                    path:"manufacture"
-                },
-                {
-                    Component:Live,
-                    path:"live"
-                },
-                {
-                    Component:Photo,
-                    path:"photo"
-                },
-                {
-                    path:"/short",
-                    element:<Shorts></Shorts>
-                },
-                {
-                    path:"*",
-                    Component:NotFound
-                },
-                {
-                    path:"require",
-                    Component:Require
-                },
+      {
+        path:"video/:id",
+        element:<VideoDetails></VideoDetails>
+      },
 
-                {
-                    path:"review",
-                    Component:Review
-                },
-                {
-                    path:"market",
-                    Component:Market
-                },
-                {
-                    path:"rent",
-                    Component:Rent,
-                },
-                {
-                    path:"car",
-                    Component:Car
-                }
-            ]
-           
-        
-        }
-    ]
-)
+      {
+        path: "category/:categoryName",
+        element: <CetagoryPage />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "manufacture",
+        element: <Manufacture />,
+      },
+      {
+        path: "live",
+        element: <Live />,
+      },
+      {
+        path: "photo",
+        element: <Photo />,
+      },
+      {
+        path: "short",
+        element: <Shorts />,
+      },
+      {
+        path: "require",
+        element: <Require />,
+      },
+      {
+        path: "review",
+        element: <Review />,
+      },
+      {
+        path: "market",
+        element: <Market />,
+      },
+      {
+        path: "rent",
+        element: <Rent />,
+      },
+      {
+        path: "car",
+        element: <Car />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
+  },
+]);

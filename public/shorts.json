@@ -1,96 +1,184 @@
 [
   {
     "id": 1,
-    "title": "Automated Car Assembly Line in Action 🚗",
-    "src": "https://cdn.videvo.net/videvo_files/video/free/2021-07/small_watermarked/210701_03_CarFactory_4k_019_preview.webm",
-    "description": "Watch the precision engineering behind modern car manufacturing. From robotic arms to conveyor systems, this is where technology meets speed.",
+    "title": "Car Drifting on Track 🚗💨",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-sport-car-drifting-on-race-track-3853-large.mp4",
+    "description": "Watch this high-speed drift on a professional race track!",
     "photos": [
       "https://images.unsplash.com/photo-1502877338535-766e1452684a",
-      "https://images.unsplash.com/photo-1581092795360-58b67a62a26e",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a"
-    ],
-    "comments": [
-      { "user": "JohnD", "text": "Amazing automation!" },
-      { "user": "TechGuy", "text": "Those robots move so fast!" }
+      "https://images.unsplash.com/photo-1581092795360-58b67a62a26e"
     ],
     "company": {
       "name": "AutoNova Ltd",
       "avatar": "https://i.pravatar.cc/150?img=11",
       "tagline": "Driven by Innovation"
     },
-    "duration": "0:31",
+    "duration": "0:20",
     "views": "25.6K",
     "uploaded": "1 day ago",
-    "line": "Precision & Power"
+    "line": "Speed & Skill"
   },
   {
     "id": 2,
-    "title": "Modern Furniture Manufacturing Process 🔥",
-    "src": "https://cdn.videvo.net/videvo_files/video/free/2021-09/small_watermarked/210902_02_Workshop_4k_016_preview.webm",
-    "description": "A beautiful look into how furniture is crafted with precision tools and creative designs in modern factories.",
+    "title": "Wood Furniture Polishing 🪑✨",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-polishing-a-wooden-chair-42152-large.mp4",
+    "description": "Smooth finishing on handmade furniture — satisfying to watch.",
     "photos": [
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
-      "https://images.unsplash.com/photo-1581092339609-2c93c5d6a7c9",
-      "https://images.unsplash.com/photo-1572980500508-9b1bdf42c31a"
-    ],
-    "comments": [
-      { "user": "CraftLover", "text": "Love the craftsmanship!" },
-      { "user": "WoodMan", "text": "That finish is gorgeous." }
+      "https://images.unsplash.com/photo-1581092339609-2c93c5d6a7c9"
     ],
     "company": {
       "name": "Elite Furnish Ltd",
       "avatar": "https://i.pravatar.cc/150?img=32",
       "tagline": "Innovating Wood Crafting"
     },
-    "duration": "0:28",
+    "duration": "0:17",
     "views": "14.2K",
     "uploaded": "2 days ago",
     "line": "Wood Perfection"
   },
   {
     "id": 3,
-    "title": "Handmade Jewelry Design Timelapse ✨",
-    "src": "https://cdn.videvo.net/videvo_files/video/free/2022-04/small_watermarked/220401_02_Jewelry_1080p_015_preview.webm",
-    "description": "An artistic timelapse of handcrafted jewelry making — a fusion of creativity, patience, and precision.",
+    "title": "Jewelry Shaping Process 💎",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-goldsmith-working-on-a-ring-42151-large.mp4",
+    "description": "A craftsman shaping gold jewelry by hand.",
     "photos": [
-      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3",
-      "https://images.unsplash.com/photo-1518544801958-efcbf8a7ec10"
-    ],
-    "comments": [
-      { "user": "JewelryQueen", "text": "Stunning detail!" },
-      { "user": "ArtFan", "text": "This is so satisfying to watch." }
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3"
     ],
     "company": {
       "name": "ShineArt Co.",
       "avatar": "https://i.pravatar.cc/150?img=45",
       "tagline": "Luxury by Hand"
     },
-    "duration": "0:32",
+    "duration": "0:18",
     "views": "23.4K",
     "uploaded": "1 week ago",
     "line": "Pure Elegance"
   },
   {
     "id": 4,
-    "title": "Smartphone Assembly Line — Behind The Scenes 📱",
-    "src": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190917_01_Smartphone_4k_006_preview.webm",
-    "description": "Step inside the smartphone assembly line and see how cutting-edge devices are built piece by piece.",
+    "title": "Smartphone Assembly 👷‍♂️📱",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-close-up-of-hands-building-a-smartphone-12402-large.mp4",
+    "description": "Technician assembling smartphone parts with precision.",
     "photos": [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      "https://images.unsplash.com/photo-1542751110-97427bbecf20"
-    ],
-    "comments": [
-      { "user": "GadgetGeek", "text": "Incredible precision!" },
-      { "user": "Engineer101", "text": "This is next-level production." }
+      "https://images.unsplash.com/photo-1518770660439-4636190af475"
     ],
     "company": {
       "name": "TechOne Factory",
       "avatar": "https://i.pravatar.cc/150?img=9",
       "tagline": "Building the Future"
     },
-    "duration": "0:29",
+    "duration": "0:19",
     "views": "41.8K",
     "uploaded": "5 hours ago",
     "line": "Innovation Lab"
+  },
+  {
+    "id": 5,
+    "title": "Chocolate Pouring 🍫",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-pouring-melted-chocolate-1241-large.mp4",
+    "description": "Satisfying chocolate melt pouring on a bar mold.",
+    "photos": [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+    ],
+    "company": {
+      "name": "ChocoMaster Ltd",
+      "avatar": "https://i.pravatar.cc/150?img=14",
+      "tagline": "Crafting Sweet Moments"
+    },
+    "duration": "0:16",
+    "views": "19.7K",
+    "uploaded": "3 days ago",
+    "line": "Sweet Engineering"
+  },
+  {
+    "id": 6,
+    "title": "Jet Engine Assembling ✈️",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-a-mechanic-working-on-a-jet-engine-42154-large.mp4",
+    "description": "An engineer assembling aircraft engine components.",
+    "photos": [
+      "https://images.unsplash.com/photo-1515777315835-281b94c9589a"
+    ],
+    "company": {
+      "name": "SkyTech Aero Systems",
+      "avatar": "https://i.pravatar.cc/150?img=41",
+      "tagline": "Powering the Skies"
+    },
+    "duration": "0:21",
+    "views": "32.1K",
+    "uploaded": "2 days ago",
+    "line": "Engineering Excellence"
+  },
+  {
+    "id": 7,
+    "title": "Fabric Weaving Process 🧵",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-fabric-weaving-on-a-machine-1240-large.mp4",
+    "description": "Automatic fabric weaving in a textile mill.",
+    "photos": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+    ],
+    "company": {
+      "name": "WeaveWorks Co.",
+      "avatar": "https://i.pravatar.cc/150?img=27",
+      "tagline": "Threads of Innovation"
+    },
+    "duration": "0:23",
+    "views": "16.4K",
+    "uploaded": "4 days ago",
+    "line": "Fabric of the Future"
+  },
+  {
+    "id": 8,
+    "title": "Recycling Plastic Bottles ♻️",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-plastic-bottles-being-recycled-42150-large.mp4",
+    "description": "Machines sorting and melting plastic for reuse.",
+    "photos": [
+      "https://images.unsplash.com/photo-1581092335014-4816e3e2e66f"
+    ],
+    "company": {
+      "name": "RecyCore Industries",
+      "avatar": "https://i.pravatar.cc/150?img=7",
+      "tagline": "Reusing for Tomorrow"
+    },
+    "duration": "0:20",
+    "views": "22.9K",
+    "uploaded": "6 hours ago",
+    "line": "Sustainability Line"
+  },
+  {
+    "id": 9,
+    "title": "3D Printing a Model 🧩",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-3d-printer-in-action-1243-large.mp4",
+    "description": "Layer-by-layer printing in progress.",
+    "photos": [
+      "https://images.unsplash.com/photo-1593642532871-8b12e02d091c"
+    ],
+    "company": {
+      "name": "PrintForge Labs",
+      "avatar": "https://i.pravatar.cc/150?img=22",
+      "tagline": "Shaping Tomorrow"
+    },
+    "duration": "0:22",
+    "views": "18.1K",
+    "uploaded": "8 hours ago",
+    "line": "Precision Layering"
+  },
+  {
+    "id": 10,
+    "title": "Beverage Bottling Line 🥤",
+    "src": "https://assets.mixkit.co/videos/preview/mixkit-automatic-bottling-line-in-a-factory-42155-large.mp4",
+    "description": "Beverage bottles moving along a conveyor line.",
+    "photos": [
+      "https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+    ],
+    "company": {
+      "name": "PureFizz Beverages",
+      "avatar": "https://i.pravatar.cc/150?img=36",
+      "tagline": "Refreshing Innovation"
+    },
+    "duration": "0:19",
+    "views": "28.3K",
+    "uploaded": "2 days ago",
+    "line": "Speed & Precision"
   }
 ]
