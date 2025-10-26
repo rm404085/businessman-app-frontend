@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import {
   IoChatbubbleEllipsesOutline,
@@ -8,6 +8,7 @@ import {
   IoThumbsUpSharp,
   IoEllipsisHorizontalOutline,
   IoArrowBack,
+  IoSend,
 } from "react-icons/io5";
 import {
   FaFacebookMessenger,
@@ -28,8 +29,34 @@ const VideoDetails = () => {
 
   // Modals and states
   const [showPhotos, setShowPhotos] = useState(false);
+  const [showLaptopPhotos, setLaptopShowPhotos] = useState(true);
   const [showCommentModal, setShowCommentModal] = useState(false);
+  const [showComments, setShowComments] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
+  const commentsRef = useRef(null);
+const photosRef = useRef(null);
+
+useEffect(() => {
+  if (showComments && commentsRef.current) {
+    commentsRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+}, [showComments]);
+
+useEffect(() => {
+  if (showLaptopPhotos && photosRef.current) {
+    photosRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+}, [showLaptopPhotos]);
+
+
+  const [comments, setComments] = useState([
+    { id: 1, name: "Alex", text: "Wow! Amazing video 🔥" },
+    { id: 2, name: "Sophia", text: "Love the editing 😍" },
+    { id: 3, name: "Liam", text: "Very informative, thanks!" },
+  ]);
+
+  const [newComment, setNewComment] = useState("")
+
 
   const photos = [
      "https://picsum.photos/id/1015/200/200",
@@ -40,6 +67,21 @@ const VideoDetails = () => {
     "https://picsum.photos/id/1025/200/200",
     "https://picsum.photos/id/1035/200/200"
   ];
+
+
+  const handleAddComment = () => {
+
+    if(newComment.trim() !== ""){
+      setComments([
+        ...comments,
+        {id:Date.now(), name:"You", text: newComment}
+      ])
+      setNewComment("")
+    }
+
+
+  };
+
 
   const handleBack = () => {
     navigate(-1);
@@ -198,7 +240,7 @@ const VideoDetails = () => {
 
   // 💻 Desktop Layout
   return (
-    <div className="mt-16 flex flex-col lg:flex-row gap-6 lg:p-4 mx-auto">
+    <div className="mt-4 flex flex-col lg:flex-row gap-6 lg:p-4 mx-auto">
       {/* Left Side - Main Video */}
       <div className="flex-1 relative">
         <div className="absolute top-0 left-2 flex items-center gap-3 z-10">
@@ -215,6 +257,9 @@ const VideoDetails = () => {
         <div className="rounded-xl overflow-hidden shadow-lg mt-12">
           <ReactPlayer url={video.src} controls width="100%" height="480px" />
         </div>
+        <div>
+            <h4 className="font-bold text-lg">{video.title}</h4>
+          </div>
 
         <p className="text-gray-500 text-sm mt-4">
           {video.views} views • {video.uploaded}
@@ -238,13 +283,23 @@ const VideoDetails = () => {
               <FaPaperPlane /> Send
             </button>
             <button
-              onClick={() => setShowPhotos(!showPhotos)}
+              onClick={
+                () => {
+                  setLaptopShowPhotos(!showLaptopPhotos)
+                  setShowComments(false);
+
+                }
+              }
               className="flex items-center gap-1 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg"
             >
               <FaPhotoVideo /> Photos
             </button>
+            
             <button
-              onClick={() => setShowCommentModal(true)}
+              onClick={() => {
+                setShowComments(!showComments)
+                setLaptopShowPhotos(false);
+              }}
               className="flex items-center gap-1 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg"
             >
               <IoChatbubbleEllipsesOutline /> Comment
@@ -253,10 +308,75 @@ const VideoDetails = () => {
               <IoEllipsisHorizontalOutline /> More
             </button>
           </div>
+          
         </div>
+        {/* description */}
+        <div className="bg-gray-100 p-4 rounded-lg mt-4">
+          <p className="text-gray-700">{video.description}</p>
+        </div>
+         {/* 🔹 Share Modal */}
+        {showShareModal && (
+          <div className="fixed inset-0 bg-black/60 z-[9999] flex items-center justify-center">
+            <ShareModal 
 
+            setShowShareModal={setShowShareModal}
+            
+            />
+          </div>
+        )}
+       {/* Comments List */}
+         {
+          showComments && (
+             <div ref={commentsRef}> 
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center pt-3 border-b pb-2">
+            Comments ({comments.length})
+          </h3>
+              <div className="flex-1 h-96 overflow-y-auto px-4 py-2 space-y-3">
+            {comments.map((comment) => (
+              <div
+                key={comment.id}
+                className="bg-gray-100 rounded-2xl px-3 py-2 flex flex-col"
+              >
+                <span className="text-sm font-semibold text-gray-800">
+                  {comment.name}
+                </span>
+                <span className="text-sm text-gray-700">{comment.text}</span>
+              </div>
+            ))}
+          </div>
+           {/* Input Section */}
+                    <div className="border-t bg-gray-50 p-3 flex items-center gap-2">
+                      <input
+                        type="text"
+                        value={newComment}
+                        onChange={(e) => setNewComment(e.target.value)}
+                        placeholder="Add a comment..."
+                        className="flex-1 border rounded-full px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-400"
+                      />
+                      <button
+                        onClick={handleAddComment}
+                        className="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition"
+                      >
+                        <IoSend size={18} />
+                      </button>
+                    </div>
+             </div>
+          )
+         }
+
+        {/* 🔹 Photos Modal
         {showPhotos && (
-          <div className="grid grid-cols-3 gap-2 my-4">
+          <div className="fixed inset-0 bg-black/60 z-[9999] flex items-center justify-center">
+            <PhotosModal 
+            setShowPhotos={setShowPhotos}
+             photos={photos}
+          startIndex={0}
+            />
+          </div>
+        )} */}
+
+        {showLaptopPhotos && (
+          <div ref={photosRef} className="grid grid-cols-3 gap-2 my-4">
             {photos.map((img, idx) => (
               <img
                 key={idx}
@@ -268,9 +388,7 @@ const VideoDetails = () => {
           </div>
         )}
 
-        <div className="bg-gray-100 p-4 rounded-lg mt-4">
-          <p className="text-gray-700">{video.description}</p>
-        </div>
+        
       </div>
 
       {/* Right Side - Related Videos */}

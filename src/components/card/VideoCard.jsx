@@ -164,41 +164,44 @@ const VideoCard = ({ video }) => {
           </>
         )}
 
-        {/* Comments */}
-        {activeTab === "comments" && (
-          <div
-            className="p-4 flex flex-col gap-2 max-h-[300px] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {comments.length === 0 && (
-              <p className="text-gray-500">No comments yet.</p>
-            )}
-            {comments.map((c, idx) => (
-              <div key={idx} className="border-b border-gray-200 pb-1">
-                <p className="font-semibold">{c.user}</p>
-                <p className="text-gray-700">{c.text}</p>
-              </div>
-            ))}
+       {activeTab === "comments" && (
+  <div
+    className="p-4 flex flex-col justify-between h-[300px]" // important part
+    onClick={(e) => e.stopPropagation()}
+  >
+    <div className="flex flex-col gap-2 overflow-y-auto">
+      {comments.length === 0 && (
+        <p className="text-gray-500">No comments yet.</p>
+      )}
+      {comments.map((c, idx) => (
+        <div key={idx} className="border-b border-gray-200 pb-1">
+          <p className="font-semibold">{c.user}</p>
+          <p className="text-gray-700">{c.text}</p>
+        </div>
+      ))}
+    </div>
 
-            <form onSubmit={handleAddComment} className="mt-2 flex gap-2">
-              <input
-                type="text"
-                placeholder="Add a comment..."
-                className="flex-1 border border-gray-300 rounded px-2 py-1 text-sm"
-                value={newComment}
-                onChange={(e) => setNewComment(e.target.value)}
-                onClick={(e) => e.stopPropagation()}
-              />
-              <button
-                type="submit"
-                className="bg-blue-600 text-white px-3 rounded"
-                onClick={(e) => e.stopPropagation()}
-              >
-                Post
-              </button>
-            </form>
-          </div>
-        )}
+    {/* Input fixed at bottom */}
+    <form onSubmit={handleAddComment} className="mt-2 flex gap-2">
+      <input
+        type="text"
+        placeholder="Add a comment..."
+        className="flex-1 border border-gray-300 rounded px-2 py-1 text-sm"
+        value={newComment}
+        onChange={(e) => setNewComment(e.target.value)}
+        onClick={(e) => e.stopPropagation()}
+      />
+      <button
+        type="submit"
+        className="bg-blue-600 text-white px-3 rounded"
+        onClick={(e) => e.stopPropagation()}
+      >
+        Post
+      </button>
+    </form>
+  </div>
+)}
+
 
         {/* Prev/Next Buttons */}
         {currentArr.length > 1 && (activeTab === "video" || activeTab === "photos") && (
@@ -219,7 +222,8 @@ const VideoCard = ({ video }) => {
         )}
 
         {/* Tabs */}
-        <div
+       
+         <div
           className="flex h-6 absolute bottom-3 -translate-x-1/2 left-1/2 gap-6 py-1 bg-black/35 px-4 rounded-full text-xs backdrop-blur-sm"
           onClick={(e) => e.stopPropagation()}
         >
@@ -255,18 +259,26 @@ const VideoCard = ({ video }) => {
             <span>Comments</span>
             <span>({comments.length})</span>
           </button>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              alert("Message clicked!");
-            }}
-            className="text-white"
-          >
-            Message
-          </button>
+           <button
+    onClick={(e) => {
+      e.stopPropagation();
+      alert("Message clicked!");
+    }}
+    className=" bg-blue-600 text-white px-2 py-0 rounded-full shadow-lg
+      hover:bg-blue-700 hover:scale-105  duration-300"
+  >
+     Message
+  </button>
+          
         </div>
+       
+       <div>
+       
+       </div>
+
+       </div>
       </div>
-    </div>
+   
   );
 };
 

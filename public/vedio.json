@@ -3,6 +3,7 @@
     "id": "aaaa",
     "title": "Shape of You",
     "thumbnail": "https://i.ibb.co/L1b6xSq/shape.jpg",
+    "description": "A vibrant mix of rhythm and emotion, 'Shape of You' captures the essence of love and attraction through mesmerizing beats and captivating visuals. Shot in a modern urban setting, the video showcases a perfect blend of music, dance, and storytelling.",
     "company": {
       "name": "Olivia Mitchell",
       "avatar": "https://i.ibb.co/D9wWRM6/olivia.jpg",
@@ -11,6 +12,8 @@
     "views": "100K",
     "uploaded": "2 weeks ago",
     "duration": "3:45",
+    "likes": 2400,
+    "commentsCount": 320,
     "category": "shirt",
     "brand": "Nike",
     "media": {
@@ -28,6 +31,7 @@
     "id": "aaab",
     "title": "Midnight Serenade",
     "thumbnail": "https://i.ibb.co/QPNzYVy/moonlight.jpg",
+    "description": "A soothing musical experience inspired by the beauty of the night. 'Midnight Serenade' takes you through a cinematic journey under moonlight, featuring smooth vocals and calming visuals that blend elegance with emotion.",
     "company": {
       "name": "Noah Walker",
       "avatar": "https://i.ibb.co/fDbPv7h/Noha.jpg",
@@ -36,6 +40,8 @@
     "views": "543K",
     "uploaded": "1 week ago",
     "duration": "4:12",
+    "likes": 5200,
+    "commentsCount": 480,
     "category": "shirt",
     "brand": "Adidas",
     "media": {
@@ -52,6 +58,7 @@
     "id": "aaac",
     "title": "Laugh at My Pain",
     "thumbnail": "https://i.ibb.co/NTncwqH/luahg-at-pain.jpg",
+    "description": "Kevin Hart brings his signature humor and charisma to 'Laugh at My Pain', a hilarious yet relatable take on real-life struggles. The video mixes live performance clips with behind-the-scenes moments that highlight raw authenticity.",
     "company": {
       "name": "Kevin Hart",
       "avatar": "https://i.ibb.co/XVHM7NP/kevin.jpg",
@@ -60,6 +67,8 @@
     "views": "1.1K",
     "uploaded": "3 days ago",
     "duration": "2:55",
+    "likes": 870,
+    "commentsCount": 92,
     "category": "pant",
     "brand": "Levis",
     "media": {
@@ -77,6 +86,7 @@
     "id": "aaad",
     "title": "Smells Like Teen Spirit",
     "thumbnail": "https://i.ibb.co/f9FBQwz/smells.jpg",
+    "description": "A tribute to the grunge era, 'Smells Like Teen Spirit' delivers raw energy and rebellious vibes. The video captures live stage performances filled with passion, sweat, and crowd madness — a true rock anthem of youth and freedom.",
     "company": {
       "name": "Oliver Harris",
       "avatar": "https://i.ibb.co/k4tkc42/oliviar-harris.jpg",
@@ -85,6 +95,8 @@
     "views": "5.4K",
     "uploaded": "2 months ago",
     "duration": "5:01",
+    "likes": 3400,
+    "commentsCount": 610,
     "category": "pant",
     "brand": "Lee",
     "media": {
@@ -101,6 +113,7 @@
     "id": "aaae",
     "title": "Inside Amy Schumer",
     "thumbnail": "https://i.ibb.co/Yc4p5gD/inside-amy.jpg",
+    "description": "Comedian Amy Schumer takes you inside her world of humor, honesty, and unapologetic realness. 'Inside Amy Schumer' blends sketch comedy, satire, and candid moments that challenge stereotypes with a touch of wit.",
     "company": {
       "name": "Amy Schumer",
       "avatar": "https://i.ibb.co/YD2mqH7/amy.jpg",
@@ -109,6 +122,8 @@
     "views": "3.6K",
     "uploaded": "1 month ago",
     "duration": "6:20",
+    "likes": 2100,
+    "commentsCount": 230,
     "category": "shoe",
     "brand": "Bata",
     "media": {
