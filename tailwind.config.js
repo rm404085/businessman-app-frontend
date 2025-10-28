@@ -27,6 +27,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+      },
 		 keyframes: {
         slideUp: {
           "0%": { transform: "translateY(100%)", opacity: "0" },

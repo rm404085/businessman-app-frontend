@@ -61,7 +61,7 @@ const VedioCategory = () => {
         ref={scrollRef}
         className="flex gap-3 overflow-x-auto scrollbar-hide px-8 py-2 scroll-smooth"
       >
-        {categories.slice().reverse().map((cat, idx) => (
+        {categories.slice().map((cat, idx) => (
           <Link
             key={idx}
             to={cat.path} // ✅ Path দেওয়া হলো

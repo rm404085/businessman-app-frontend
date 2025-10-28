@@ -5,41 +5,47 @@
     "time": "2h",
     "text": "Enjoying the beautiful sunset Enjoying the beautiful sunset Enjoying the beautiful sunset Enjoying the beautiful sunset Enjoying the beautiful sunset vvv 🌅",
     "image": "https://images.unsplash.com/photo-1501973801540-537f08ccae7b",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
-
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [
+      "https://www.w3schools.com/html/mov_bbb.mp4"
+    ],
     "likes": 23,
     "comments": 5,
-    "shares": 2
+    "shares": 2,
+    "description": "John captured a serene sunset moment, sharing the beauty of nature with his followers."
   },
-  
   {
     "id": 3,
     "user": { "name": "Michael Brown", "avatar": "https://i.pravatar.cc/100?img=8" },
     "time": "3h",
     "text": "Weekend hiking adventure 🏞️",
     "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [
+      "https://www.w3schools.com/html/movie.mp4"
+    ],
     "likes": 102,
     "comments": 18,
-    "shares": 7
+    "shares": 7,
+    "description": "Michael shares his adventurous weekend hike, exploring scenic trails and nature."
   },
   {
     "id": 4,
@@ -47,19 +53,21 @@
     "time": "5h",
     "text": "Trying out some new recipes 🍝",
     "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [],
     "likes": 78,
     "comments": 20,
-    "shares": 10
+    "shares": 10,
+    "description": "Emily explores her culinary skills, sharing delicious dishes she tried making at home."
   },
   {
     "id": 5,
@@ -67,19 +75,21 @@
     "time": "30m",
     "text": "Chilling with friends 🎉",
     "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [],
     "likes": 34,
     "comments": 7,
-    "shares": 1
+    "shares": 1,
+    "description": "Chris enjoys a fun time hanging out with friends, capturing joyful moments together."
   },
   {
     "id": 6,
@@ -87,19 +97,23 @@
     "time": "2 days ago now",
     "text": "Nature always amazes me 🌿",
     "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [
+      "https://www.w3schools.com/html/mov_bbb.mp4"
+    ],
     "likes": 145,
     "comments": 33,
-    "shares": 15
+    "shares": 15,
+    "description": "Sophia shares her awe for nature's beauty, capturing tranquil landscapes and greenery."
   },
   {
     "id": 7,
@@ -107,19 +121,21 @@
     "time": "6 h",
     "text": "City lights never disappoint ✨",
     "image": "https://images.unsplash.com/photo-1499346030926-9a72daac6c63",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [],
     "likes": 67,
     "comments": 11,
-    "shares": 5
+    "shares": 5,
+    "description": "Daniel showcases the mesmerizing city lights, capturing urban beauty during the night."
   },
   {
     "id": 8,
@@ -127,18 +143,22 @@
     "time": "3 d",
     "text": "Beach vibes 🏖️",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-     "gallery": [
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200",
-    "https://picsum.photos/id/1015/200/200",
-    "https://picsum.photos/id/1025/200/200",
-    "https://picsum.photos/id/1035/200/200",
-    "https://picsum.photos/id/1045/200/200"
-  ],
+    "gallery": [
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200",
+      "https://picsum.photos/id/1015/200/200",
+      "https://picsum.photos/id/1025/200/200",
+      "https://picsum.photos/id/1035/200/200",
+      "https://picsum.photos/id/1045/200/200"
+    ],
+    "videos": [
+      "https://www.w3schools.com/html/movie.mp4"
+    ],
     "likes": 210,
     "comments": 45,
-    "shares": 25
+    "shares": 25,
+    "description": "Olivia enjoys the relaxing beach vibes, sharing sun, sand, and sea moments with her followers."
   }
 ]

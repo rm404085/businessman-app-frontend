@@ -17,217 +17,151 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-## shorts
-import React, { useState, useEffect, useRef } from "react";
-import ReactPlayer from "react-player";
-import { motion } from "framer-motion";
+## PhotosCard
 import {
-  IoHeart,
-  IoChatbubbleEllipses,
-  IoShareSocial,
-  IoMagnetSharp,
-} from "react-icons/io5";
-import { FaShoppingCart } from "react-icons/fa";
+  FaHeart,
+  FaRegHeart,
+  FaCommentAlt,
+  FaShare,
+  FaPhotoVideo,
+  FaShoppingCart,
+  FaShareAlt,
+} from "react-icons/fa";
+import { useState } from "react";
+import { Link } from "react-router";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Scrollbar } from "swiper/modules";
 
-const ShortCard = ({ short }) => {
+import "swiper/css";
+import "swiper/css/scrollbar";
+
+const PhotoCard = ({ post }) => {
   const [liked, setLiked] = useState(false);
-  const [hovered, setHovered] = useState(false);
-  const [comments, setComments] = useState(short?.comments || []);
-  const [commentText, setCommentText] = useState("");
-  const [isVisible, setIsVisible] = useState(false);
+  const [following, setFollowing] = useState(false);
+  const [showFullText, setShowFullText] = useState(false);
+  const [mainImage, setMainImage] = useState(post.image); // ✅ main photo state
 
-  const videoRef = useRef(null);
+  const toggleText = () => setShowFullText(!showFullText);
 
-  // 🧠 Intersection Observer: Auto play/pause when visible
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.7 }
-    );
-
-    if (videoRef.current) observer.observe(videoRef.current);
-    return () => observer.disconnect();
-  }, []);
-
-  const handleComment = (e) => {
-    e.preventDefault();
-    if (!commentText.trim()) return;
-    setComments([...comments, { user: "You", text: commentText.trim() }]);
-    setCommentText("");
-  };
+  // ✂️ Text truncate logic
+  const truncatedText =
+    post.text && post.text.length > 100
+      ? post.text.slice(0, 100) + "..."
+      : post.text;
 
   return (
-    <div
-      ref={videoRef}
-      className="flex flex-col rounded-sm lg:h-[600px] lg:flex-row w-full h-screen bg-black text-white"
-    >
-      {/* 🎬 VIDEO CONTAINER */}
-      <div
-        className="relative w-full lg:w-1/3 h-screen lg:h-[80vh] flex-shrink-0 group"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        {/* 🖥️ VIDEO PLAYER */}
-        <ReactPlayer
-          url={short.src}
-          playing={isVisible} // 👈 auto-play when visible
-          loop
-          muted={!hovered}
-          controls={hovered}
-          width="100%"
-          height="100%"
-          className="pointer-events-auto cursor-pointer"
-        />
-
-        {/* 📱 MOBILE PROFILE BAR */}
-        <div className="absolute top-3 left-0 right-0 flex items-center justify-center md:hidden z-20 bg-black/30 backdrop-blur-sm py-1 rounded-full mx-2">
-          <div className="absolute left-3 flex items-center">
+    <div className="bg-white rounded-xl m-1 p-1 shadow hover:shadow-lg transition overflow-hidden">
+      {/* Header Section */}
+      <div className="p-0 pb-0">
+        <div className="flex items-center top-0 justify-between mb-3">
+          {/* User Info */}
+          <div className="flex items-center gap-3">
             <img
-              src={short.company.avatar}
-              alt={short.company.name}
-              className="w-8 h-8 rounded-full border border-white/40"
+              src={post.user.avatar}
+              alt={post.user.name}
+              className="w-10 h-10 rounded-full"
             />
+            </div>
+            <div>
+              <p className="font-semibold">{post.user.name}</p>
+              <span className="text-xs flex justify-center items-center text-gray-500">{post.time}</span>
+              
+            </div>
+             {/* Follow + More Button */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setFollowing(!following)}
+              className={`text-sm font-semibold px-3 py-1 rounded-full border transition ${
+                following
+                  ? "bg-gray-200 text-gray-700 border-gray-300"
+                  : "bg-violet-800 text-white border-blue-600 hover:bg-blue-700"
+              }`}
+            >
+              {following ? "Following" : "Follow"}
+            </button>
+
+            {/* More Option Button */}
+            <button className="text-gray-500 text-xl hover:text-gray-800">
+              ⋮
+            </button>
           </div>
-          <span className="text-sm font-semibold text-white truncate max-w-[50%] text-center">
-            {short.company.name}
-          </span>
-          <div className="absolute right-3 flex items-center justify-center p-[3px] rounded-full border border-blue-900 hover:shadow-lg cursor-pointer hover:scale-110 transition">
-            <IoMagnetSharp className="text-lg" />
-          </div>
+          
+
+         
         </div>
 
-        {/* 📱 MOBILE TITLE AT BOTTOM */}
-        <div className="absolute bottom-3 left-3 md:hidden bg-black/50 p-2 rounded-md backdrop-blur-sm z-20 w-[95%]">
-          <p className="text-sm font-medium">{short.title}</p>
-        </div>
-
-        {/* 📱 MOBILE ACTION BUTTONS */}
-        <div className="absolute right-3 bottom-20 flex flex-col gap-4 lg:hidden z-20">
-          <motion.button
-            whileTap={{ scale: 1.3 }}
-            onClick={() => setLiked(!liked)}
-            className={`p-3 rounded-full bg-black/60 hover:bg-black/80 ${
-              liked ? "text-red-500" : "text-white"
-            }`}
-          >
-            <IoHeart className="text-2xl" />
-          </motion.button>
-
-          <motion.button
-            whileTap={{ scale: 1.2 }}
-            className="p-3 rounded-full bg-black/60 hover:bg-black/80"
-          >
-            <IoChatbubbleEllipses className="text-2xl" />
-          </motion.button>
-
-          <motion.button
-            whileTap={{ scale: 1.2 }}
-            className="p-3 rounded-full bg-black/60 hover:bg-black/80"
-          >
-            <IoShareSocial className="text-2xl" />
-          </motion.button>
-
-          <motion.button
-            whileTap={{ scale: 1.2 }}
-            className="p-3 rounded-full bg-black/60 hover:bg-black/80"
-          >
-            <FaShoppingCart className="text-2xl" />
-          </motion.button>
+        {/* Text Section */}
+        <div className="flex h-10 justify-between">
+          <p>
+            {post.text && (
+              <div className="text-gray-700 text-sm font-medium leading-snug mb-2">
+                {showFullText ? post.text : truncatedText}
+                {post.text.length > 20 && (
+                  <button
+                    onClick={toggleText}
+                    className="text-blue-600 ml-1 font-semibold hover:underline"
+                  >
+                    {showFullText ? "Show less" : "More"}
+                  </button>
+                )}
+              </div>
+            )}
+          </p>
         </div>
       </div>
 
-      {/* INFO PANEL (Desktop) */}
-      <div className="hidden lg:flex flex-1 flex-col overflow-y-auto p-4 gap-4 bg-[#0f0f0f] rounded-tr-xl rounded-br-xl shadow-lg">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img
-              src={short.company.avatar}
-              alt={short.company.name}
-              className="w-12 h-12 rounded-full border border-gray-300"
-            />
-            <div>
-              <p className="font-semibold text-lg">{short.company.name}</p>
-              <p className="text-sm text-gray-500">{short.company.tagline}</p>
-            </div>
-          </div>
-        </div>
+      {/* Main Image */}
+      <img
+        src={mainImage} // ✅ mainImage state ব্যবহার
+        alt={post.text}
+        className="w-full h-[350px] object-cover rounded-md"
+      />
 
-        <h2 className="font-semibold text-lg">{short.title}</h2>
-        <p className="text-gray-400 text-sm">{short.description}</p>
-
-        {short.photos?.length > 0 && (
-          <div className="flex gap-2 overflow-x-auto">
-            {short.photos.map((photo, i) => (
-              <img
-                key={i}
-                src={photo}
-                alt={`photo-${i}`}
-                className="w-20 h-20 rounded-lg object-cover"
-              />
+      {/* 🖼️ Scrollable Swiper Gallery */}
+      {post.gallery && post.gallery.length > 0 && (
+        <div className="p-4">
+          <Swiper
+            spaceBetween={12}
+            slidesPerView={3.3}
+            grabCursor={true}
+            modules={[Scrollbar]}
+            scrollbar={{ draggable: true }}
+          >
+            {post.gallery.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img
+                  src={img}
+                  alt={`slide-${idx}`}
+                  className="rounded-lg w-full h-24 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                  // ✅ Click করলে mainImage update হবে
+                  onClick={() => setMainImage(img)}
+                  // ✅ Optional: Hover করলে mainImage update
+                  onMouseEnter={() => setMainImage(img)}
+                />
+              </SwiperSlide>
             ))}
-          </div>
-        )}
-
-        <div className="flex flex-col flex-grow overflow-y-auto bg-black/30 rounded-lg p-3">
-          {comments.map((c, i) => (
-            <div key={i} className="mb-2">
-              <p className="text-sm font-semibold text-violet-300">{c.user}</p>
-              <p className="text-sm text-gray-300">{c.text}</p>
-            </div>
-          ))}
+          </Swiper>
         </div>
+      )}
 
-        <form onSubmit={handleComment} className="flex gap-2 mt-2">
-          <input
-            type="text"
-            value={commentText}
-            onChange={(e) => setCommentText(e.target.value)}
-            placeholder="Write a comment..."
-            className="flex-1 bg-black/50 text-white p-2 rounded-lg focus:outline-none text-sm"
-          />
-          <button
-            type="submit"
-            className="bg-violet-700 hover:bg-violet-800 px-4 py-2 rounded-lg text-sm font-semibold"
-          >
-            Send
+      {/* Action Buttons */}
+      <div className="flex justify-around border-t p-2 text-lg text-gray-600">
+        <Link to="/photo">
+          <button className="flex items-center gap-1 hover:scale-125 hover:text-yellow-900 transition">
+            <FaPhotoVideo /> Photo
           </button>
-        </form>
+        </Link>
 
-        <div className="hidden lg:flex justify-between mt-4">
-          <motion.button
-            whileTap={{ scale: 1.3 }}
-            onClick={() => setLiked(!liked)}
-            className={`p-3 rounded-full bg-black/60 hover:bg-black/80 ${
-              liked ? "text-red-500" : "text-white"
-            }`}
-          >
-            <IoHeart className="text-2xl" />
-          </motion.button>
-          <motion.button
-            whileTap={{ scale: 1.2 }}
-            className="p-3 rounded-full bg-black/60 hover:bg-black/80"
-          >
-            <IoChatbubbleEllipses className="text-2xl" />
-          </motion.button>
-          <motion.button
-            whileTap={{ scale: 1.2 }}
-            className="p-3 rounded-full bg-black/60 hover:bg-black/80"
-          >
-            <IoShareSocial className="text-2xl" />
-          </motion.button>
-          <motion.button
-            whileTap={{ scale: 1.2 }}
-            className="p-3 rounded-full bg-black/60 hover:bg-black/80"
-          >
-            <FaShoppingCart className="text-2xl" />
-          </motion.button>
-        </div>
+        <button className="flex items-center gap-1 hover:scale-125 hover:text-green-600 transition">
+          <FaShoppingCart /> Order
+        </button>
+
+        <button className="flex items-center gap-1 hover:scale-125 hover:text-red-600 transition">
+          <FaShareAlt /> Share
+        </button>
       </div>
     </div>
   );
 };
 
-export default ShortCard;
+export default PhotoCard;

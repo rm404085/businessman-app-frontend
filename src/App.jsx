@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import CommonLayout from './components/layout/CommonLayout';
-import Footer from './components/layout/Footer';
+import '@fontsource/poppins/500.css';
 
 function App() {
   // const location = useLocation();
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <CommonLayout>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex font-sans flex-col min-h-screen">
         {/* Main content */}
         <div className="flex-1">
           <Outlet />

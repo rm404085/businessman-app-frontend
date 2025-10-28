@@ -1,4 +1,5 @@
 import App from "@/App";
+import PhotoDetails from "@/components/details/photoDetails/PhotoDetails";
 import VideoDetails from "@/components/details/videoDetails/VideoDetails";
 import About from "@/page/about/About";
 import Car from "@/page/car/Car";
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "photo",
         element: <Photo />,
+      },
+      {
+        path:"photo/:id",
+        element:<PhotoDetails></PhotoDetails>
       },
       {
         path: "short",

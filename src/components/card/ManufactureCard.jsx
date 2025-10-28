@@ -84,6 +84,7 @@ const ManufactureCard = ({ video }) => {
             >
               {video.company?.name}
             </h4>
+            <p className="text-xs text-gray-500">{video.company.tagline}</p>
           </div>
           <button
             className="p-2 rounded-full border-2 border-blue-900 shadow-md hover:shadow-lg cursor-pointer transform transition-all hover:scale-110"

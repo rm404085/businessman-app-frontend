@@ -29,7 +29,7 @@ const VideoDetails = () => {
 
   // Modals and states
   const [showPhotos, setShowPhotos] = useState(false);
-  const [showLaptopPhotos, setLaptopShowPhotos] = useState(true);
+  const [showLaptopPhotos, setLaptopShowPhotos] = useState(false);
   const [showCommentModal, setShowCommentModal] = useState(false);
   const [showComments, setShowComments] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);

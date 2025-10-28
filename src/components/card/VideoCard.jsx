@@ -66,7 +66,9 @@ const VideoCard = ({ video }) => {
   const shortText = video.title?.slice(0, 100) || "";
 
   return (
-    <div className="rounded-xl hover:bg-violet-100 transition bg-white flex flex-col cursor-pointer">
+    <div 
+    onClick={handleCardClick}
+    className="rounded-xl hover:bg-violet-100 transition bg-white flex flex-col cursor-pointer">
       {/* Top Section */}
       <div className="p-3 space-y-2">
         {/* Company Info */}
@@ -107,7 +109,9 @@ const VideoCard = ({ video }) => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                e.stopPropagation();
+                 e.stopPropagation();
+   
+                
                 setExpanded(!expanded);
               }}
               className="text-blue-600 font-light ml-1"
@@ -224,7 +228,7 @@ const VideoCard = ({ video }) => {
         {/* Tabs */}
        
          <div
-          className="flex h-6 absolute bottom-3 -translate-x-1/2 left-1/2 gap-6 py-1 bg-black/35 px-4 rounded-full text-xs backdrop-blur-sm"
+          className="flex h-6 absolute bottom-3 -translate-x-1/2 left-1/2 gap-2 py-1 bg-black/35 px-4 rounded-full text-xs backdrop-blur-sm"
           onClick={(e) => e.stopPropagation()}
         >
           {videoSrcs.length > 0 && (

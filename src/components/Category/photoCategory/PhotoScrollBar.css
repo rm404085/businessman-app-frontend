@@ -1,0 +1,9 @@
+/* Hide scrollbar only for photo category */
+.photo-scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.photo-scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
