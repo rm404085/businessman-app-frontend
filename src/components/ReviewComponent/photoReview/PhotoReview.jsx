@@ -26,7 +26,7 @@ const demoReviews = [
   },
 ];
 
-const PhotoReview = () => {
+const PhotoReview = ({reviewFormRef}) => {
   const [reviews, setReviews] = useState(demoReviews);
   const [showAll, setShowAll] = useState(false);
 
@@ -81,7 +81,7 @@ const PhotoReview = () => {
                     key={idx}
                     src={img}
                     alt="review"
-                    className="w-16 h-16 object-cover rounded-lg border"
+                    className="w-14 h-14 object-cover rounded-lg border"
                   />
                 ))}
               </div>
@@ -110,7 +110,7 @@ const PhotoReview = () => {
       )}
 
       {/* Review Form */}
-      <div className="mt-5">
+      <div ref={reviewFormRef} className="mt-5">
         <ReviewForm onAddReview={handleAddReview} />
       </div>
     </div>

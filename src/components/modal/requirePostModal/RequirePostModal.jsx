@@ -100,7 +100,7 @@ const RequirePostModal = ({
         </div>
 
        {mediaPreview && mediaPreview.length > 0 && (
-  <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
+  <div className="mt-4 grid grid-cols-3 md:grid-cols-2 gap-3">
     {mediaPreview.map((src, index) => (
       <div key={index} className="relative bg-gray-100 rounded-xl overflow-hidden">
         {src.includes("video") ? (
