@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const BrandCategory = ({ brands, onBrandSelect }) => {
+  
   const [selected, setSelected] = useState("All");
 
   const handleClick = (brand) => {

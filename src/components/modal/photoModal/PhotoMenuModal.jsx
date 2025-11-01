@@ -1,9 +1,11 @@
-import { IoChatbubbleEllipsesOutline, IoShareSocialOutline, IoCopyOutline } from "react-icons/io5";
+import { IoChatbubbleEllipsesOutline, IoShareSocialOutline, IoCopyOutline, IoHome } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaCross, FaTimes } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const PhotoMenuModal = ({open , setOpen}) => {
 
+  const navigate = useNavigate();
 
     return(
         <div>
@@ -36,6 +38,13 @@ const PhotoMenuModal = ({open , setOpen}) => {
   </button>
 </div>
               <div className="flex flex-col gap-3">
+                <button 
+                onClick={()=>navigate("/")}
+                className="flex items-center gap-3 py-2 hover:bg-gray-100 rounded-xl px-3 text-gray-700">
+                  <IoHome size={22}></IoHome>
+                  <span>Home</span>
+
+                </button>
                 <button className="flex items-center gap-3 py-2 hover:bg-gray-100 rounded-xl px-3 text-gray-700">
                   <IoChatbubbleEllipsesOutline size={22} />
                   <span>Send Message</span>

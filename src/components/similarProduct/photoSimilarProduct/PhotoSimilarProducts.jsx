@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { ShoppingCart, Heart } from "lucide-react";
+import { useNavigate } from "react-router";
 
 const PhotoSimilarProducts = () => {
   // তোমার নিজের “real” প্রোডাক্ট ডেটা
-  const realProducts = [
+   const realProducts = [
     {
       id: 1,
       name: "Wedding Photography Package",
@@ -33,8 +34,9 @@ const PhotoSimilarProducts = () => {
       rating: 5,
     },
   ];
-
+ 
   const [favorites, setFavorites] = useState([]);
+  const navigate = useNavigate();
 
   const toggleFavorite = (id) => {
     setFavorites((prev) =>
@@ -53,6 +55,7 @@ const PhotoSimilarProducts = () => {
           <div
             key={item.id}
             className="relative border rounded-xl overflow-hidden group shadow-sm hover:shadow-md transition"
+            onClick={()=> navigate(`/photo/${item.id}`)}
           >
             <div className="relative">
               <img
