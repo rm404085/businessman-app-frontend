@@ -34,7 +34,7 @@ const VideoDetails = () => {
   const [showComments, setShowComments] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const commentsRef = useRef(null);
-const photosRef = useRef(null);
+  const photosRef = useRef(null);
 
 useEffect(() => {
   if (showComments && commentsRef.current) {

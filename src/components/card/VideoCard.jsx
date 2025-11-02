@@ -2,6 +2,9 @@ import { IoMagnetSharp } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import VideoMenuModal from "../modal/videoModal/VideoMenuModal";
+import PostReviewModal from "../modal/videoModal/PostReviewModal";
 
 
 
@@ -11,6 +14,8 @@ const VideoCard = ({ video }) => {
   const [activeTab, setActiveTab] = useState("video");
   const [comments, setComments] = useState(video.comments || []);
   const [newComment, setNewComment] = useState("");
+  const [open, setOpen] = useState(false);
+  const [openPostReview, setOpenPostReview] = useState(false);
   const navigate = useNavigate();
 
   // Media arrays
@@ -87,7 +92,8 @@ const VideoCard = ({ video }) => {
               {video.company?.name}
             </h4>
           </div>
-          <button
+         <div className="flex">
+           <button
             className="p-2 rounded-full border-2 border-blue-900 shadow-md hover:shadow-lg cursor-pointer transform transition-all hover:scale-110"
             onClick={(e) => {
               e.stopPropagation();
@@ -96,6 +102,29 @@ const VideoCard = ({ video }) => {
           >
             <IoMagnetSharp className="text-2xl" />
           </button>
+          <button
+          onClick={(e)=> {
+            e.stopPropagation();
+            setOpen(true);
+
+          }}
+           className="p-2 rounded-full hover:bg-gray-100 cursor-pointer">
+            <BsThreeDotsVertical />
+            
+
+          </button>
+          {
+            open && (
+              <div>
+                <VideoMenuModal open={open} setOpen={setOpen} setOpenPostReview={setOpenPostReview} ></VideoMenuModal>
+              </div>
+            )
+          }
+          {/* Nested modal render */}
+      {openPostReview && (
+        <PostReviewModal setOpenPostReview={setOpenPostReview} />
+      )}
+         </div>
         </div>
 
         {/* Title */}
