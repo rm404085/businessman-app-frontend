@@ -2,6 +2,7 @@ import App from "@/App";
 import PhotoDetails from "@/components/details/photoDetails/PhotoDetails";
 import ShortDetails from "@/components/details/shortDetails/ShortDetails";
 import VideoDetails from "@/components/details/videoDetails/VideoDetails";
+import ProductPhoto from "@/components/ProductManufacture/ProductPhoto/ProductPhoto";
 import About from "@/page/about/About";
 import Car from "@/page/car/Car";
 import CetagoryPage from "@/page/cetagoryPage/CetagoryPage";
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "manufacture",
         element: <Manufacture />,
+      },
+      {
+        path:"manufacture/productsPhoto",
+        element:<ProductPhoto></ProductPhoto>
       },
       {
         path: "live",

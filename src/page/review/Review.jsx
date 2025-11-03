@@ -3,10 +3,10 @@ import { usePostContext } from "@/components/Provider/PostProvider/PostProvider"
 import { useEffect, useState } from "react";
 
 const Review = () => {
-  const { allPosts } = usePostContext(); // from context
-  const [reviews, setReviews] = useState([]); // fetched from JSON
+  const { allPosts } = usePostContext();
+  const [reviews, setReviews] = useState([]);
 
-  // ✅ Fetch initial reviews from local JSON
+  // ✅ fetch static review.json
   useEffect(() => {
     fetch("/review.json")
       .then((res) => res.json())
@@ -14,31 +14,31 @@ const Review = () => {
       .catch((err) => console.error("Error fetching reviews:", err));
   }, []);
 
-  // ✅ Normalize context posts to match review.json structure
-  const normalizedPosts = allPosts.map((post) => ({
-    id: post.id || Date.now(),
-    type: post.type || "post",
-    customer: {
-      name: post.name || "Anonymous",
-      photo: post.photo || "https://via.placeholder.com/150",
-    },
-    review: {
-      title: post.title || "",
-      content: post.content || "",
-      date: new Date().toISOString().split("T")[0],
-    },
-    src: post.type === "video" ? post.media : null,
-    photos: post.type === "post" ? [post.media] : [],
-  }));
+  // ✅ Normalize mixed media formats
+  const normalizeMedia = (media) => {
+    if (!media) return [];
+    return media.map((item) =>
+      typeof item === "string"
+        ? { url: item, type: item.includes(".mp4") ? "video" : "image" }
+        : item
+    );
+  };
 
-  // ✅ Combine normalized posts + static reviews
-  const combinedReviews = [...normalizedPosts, ...reviews];
+  // ✅ Merge posts + static reviews (normalized)
+  const combinedReviews = [...allPosts, ...reviews].map((r) => ({
+    ...r,
+    media: normalizeMedia(r.media),
+  }));
 
   return (
     <div className="grid gap-5 grid-cols-1 lg:m-4 lg:gap-2 mt-4 lg:grid-cols-2">
       {combinedReviews.length > 0 ? (
         combinedReviews.map((review, idx) => (
-          <ReviewCard key={review.id || idx} review={review} />
+          <ReviewCard
+            key={review.id || idx}
+            review={review}
+            companyName={review.companyName}
+          />
         ))
       ) : (
         <p className="text-center text-gray-400 col-span-full mt-10">

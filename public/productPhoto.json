@@ -1,0 +1,112 @@
+{
+  "mainCategories": [
+    {
+      "id": "cat001",
+      "name": "Mobile",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+    },
+    {
+      "id": "cat002",
+      "name": "Laptop",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600"
+    }
+  ],
+
+  "subCategories": {
+    "Mobile": [
+      {
+        "id": "band001",
+        "name": "Samsung",
+        "image": "https://images.unsplash.com/photo-1611222144898-7a97b35a2ea1?w=600"
+      },
+      {
+        "id": "band002",
+        "name": "Apple",
+        "image": "https://images.unsplash.com/photo-1631944404579-68a0cb9a4d36?w=600"
+      },
+      {
+        "id": "band003",
+        "name": "Xiaomi",
+        "image": "https://images.unsplash.com/photo-1606813902911-cf9a8e26e70b?w=600"
+      }
+    ],
+
+    "Laptop": [
+      {
+        "id": "band101",
+        "name": "Dell",
+        "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600"
+      },
+      {
+        "id": "band102",
+        "name": "HP",
+        "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600"
+      },
+      {
+        "id": "band103",
+        "name": "Apple",
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600"
+      }
+     
+    ]
+  },
+
+  "products": {
+    "Samsung": [
+      {
+        "id": "p001",
+        "productName": "Samsung Galaxy S21",
+        "price": 799,
+        "image": "https://images.unsplash.com/photo-1611222144898-7a97b35a2ea1?w=600"
+      },
+      {
+        "id": "p002",
+        "productName": "Samsung Note 20",
+        "price": 899,
+        "image": "https://images.unsplash.com/photo-1603791452906-bbdb9f902ea7?w=600"
+      }
+    ],
+
+    "Apple": [
+      {
+        "id": "p003",
+        "productName": "iPhone 13",
+        "price": 999,
+        "image": "https://images.unsplash.com/photo-1631944404579-68a0cb9a4d36?w=600"
+      },
+      {
+        "id": "p004",
+        "productName": "Macbook Pro",
+        "price": 1499,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600"
+      }
+    ],
+
+    "Xiaomi": [
+      {
+        "id": "p005",
+        "productName": "Xiaomi Mi 11",
+        "price": 599,
+        "image": "https://images.unsplash.com/photo-1606813902911-cf9a8e26e70b?w=600"
+      }
+    ],
+
+    "Dell": [
+      {
+        "id": "p006",
+        "productName": "Dell XPS 15",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600"
+      }
+    ],
+
+    "HP": [
+      {
+        "id": "p007",
+        "productName": "HP Spectre x360",
+        "price": 1100,
+        "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600"
+      }
+    ]
+  }
+}

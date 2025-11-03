@@ -7,41 +7,46 @@ export const PostProvider = ({ children }) => {
   const [mediaPreview, setMediaPreview] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
 
-  // handle image/video upload
-  const handleMedia = (e) => {
-    const files = Array.from(e.target.files);
-    const previews = files.map((file) => URL.createObjectURL(file));
-    setMediaPreview((prev) => [...prev, ...previews]);
-  };
+ // PostProvider.jsx এর ভিতরে
+const handleMedia = (e) => {
+  const files = Array.from(e.target.files);
+  if (!files || files.length === 0) return;
 
-  // main post function
-const handlePost = () => {
+  const previews = files.map((file) => {
+    const url = URL.createObjectURL(file);
+    const type = file.type.startsWith("video") ? "video" : "image";
+    return { url, type, file };
+  });
+
+  // ✅ আগের preview রাখার পাশাপাশি নতুন গুলো যোগ
+  setMediaPreview((prev) => [...prev, ...previews]);
+
+  // ✅ input reset করে দাও, যাতে পরেরবার আবার same file select করা যায়
+  e.target.value = "";
+};
+
+
+ const handlePost = ({ companyName, rating }) => {
   if (!postText.trim() && mediaPreview.length === 0) return;
-
-  // ✅ Check if uploaded file(s) are video type
-  const isVideo = mediaPreview.some((src) =>
-    src.match(/\.(mp4|mov|avi|mkv)$/)
-  );
 
   const newPost = {
     id: Date.now(),
-    type: isVideo ? "video" : "post", // ✅ auto detect type
     text: postText,
-    media: mediaPreview,
+    media: mediaPreview, // [{url, type}]
+    rating: rating || 0, // ⭐ user-এর দেওয়া rating সংরক্ষণ
     customer: {
       name: "Guest User",
       photo: "https://i.pravatar.cc/150?u=guest",
     },
     date: new Date().toLocaleString(),
+    companyName: companyName || "Unknown Company",
   };
 
-  // ✅ Add to global list
   setAllPosts((prev) => [newPost, ...prev]);
-
-  // reset form
   setPostText("");
   setMediaPreview([]);
 };
+
 
 
   return (

@@ -10,6 +10,7 @@ const CommonLayout = ({children}) => {
  
     const isPhotoPage = location.pathname.startsWith("/photo");
     const isShortPage = location.pathname.startsWith("/short");
+    const isManufacture = location.pathname.startsWith("/manufacture");
   const match = matchPath("/video/:id", location.pathname);
   const photo = matchPath("/photo/:id", location.pathname);
   const short = matchPath("/short/:id", location.pathname);
@@ -23,7 +24,7 @@ const isShortDetails = !!short;
     return (
         <div className="min-h-screen flex flex-col">
           {
-    !isShortPage && !isVideoDetails && (
+    !isShortPage && !isVideoDetails && !isManufacture && (
         <div className={isPhotoPage ? "hidden md:block" : ""}>
 <Navbar></Navbar>
         </div>

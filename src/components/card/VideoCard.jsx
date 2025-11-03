@@ -116,13 +116,15 @@ const VideoCard = ({ video }) => {
           {
             open && (
               <div>
-                <VideoMenuModal open={open} setOpen={setOpen} setOpenPostReview={setOpenPostReview} ></VideoMenuModal>
+                <VideoMenuModal open={open} setOpen={setOpen} setOpenPostReview={setOpenPostReview}
+                companyName={video.company.name} // Pass company name here!
+                 ></VideoMenuModal>
               </div>
             )
           }
           {/* Nested modal render */}
       {openPostReview && (
-        <PostReviewModal setOpenPostReview={setOpenPostReview} />
+        <PostReviewModal setOpenPostReview={setOpenPostReview} companyName={video.company.name} />
       )}
          </div>
         </div>

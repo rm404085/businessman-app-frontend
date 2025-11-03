@@ -11,10 +11,10 @@ import { MdReviews } from "react-icons/md";
 import { useNavigate } from "react-router";
 
 
-const VideoMenuModal = ({ open, setOpen, setOpenPostReview }) => {
+const VideoMenuModal = ({ open, setOpen, setOpenPostReview, companyName }) => {
   const navigate = useNavigate();
   
-
+console.log(companyName)
   return (
     <div>
       <AnimatePresence>
