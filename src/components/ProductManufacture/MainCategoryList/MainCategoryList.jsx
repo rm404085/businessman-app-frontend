@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const MainCategoryList = ({ data, setSelectedMainCat }) => {
+  const navigate = useNavigate();
   return (
     <div className="mb-8">
+      
       <h2 className="text-2xl font-semibold mb-4 text-center text-violet-700">
         Select Product Category
       </h2>

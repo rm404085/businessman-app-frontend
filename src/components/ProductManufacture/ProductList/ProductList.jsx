@@ -1,16 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const ProductList = ({ products }) => {
+
+  const navigate = useNavigate();
+
   if (!products || products.length === 0) {
     return <p>No products found.</p>;
   }
 
   return (
     <div className="space-y-4">
+      
       {products.map((prod) => (
         <div
           key={prod.id}
-          className="flex items-center border rounded-lg p-3 shadow hover:shadow-lg transition"
+          className="flex items-center md:grid md:grid-cols-2 md:gap-6 border rounded-lg p-3 shadow hover:shadow-lg transition"
+          onClick={()=> navigate(`/manufacture/productsPhoto/${prod.id}`)}
         >
           <img
             src={prod.image}

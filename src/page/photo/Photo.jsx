@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import PhotoCard from "../../components/card/PhotoCard";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import SearchButton from "../../components/ui/SearchButton";
+import SearchButton from "../../components/ui/SearchBar";
 import PhotoCategory from "../../components/Category/photoCategory/PhotoCategory";
 
 const Photo = () => {

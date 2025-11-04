@@ -2,6 +2,7 @@ import App from "@/App";
 import PhotoDetails from "@/components/details/photoDetails/PhotoDetails";
 import ShortDetails from "@/components/details/shortDetails/ShortDetails";
 import VideoDetails from "@/components/details/videoDetails/VideoDetails";
+import ProductCard from "@/components/ProductManufacture/ProductCard/ProductCard";
 import ProductPhoto from "@/components/ProductManufacture/ProductPhoto/ProductPhoto";
 import About from "@/page/about/About";
 import Car from "@/page/car/Car";
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path:"manufacture/productsPhoto",
         element:<ProductPhoto></ProductPhoto>
+      },
+      {
+        path:"manufacture/productsPhoto/:id",
+        element:<ProductCard></ProductCard>
       },
       {
         path: "live",

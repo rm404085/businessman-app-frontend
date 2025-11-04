@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
-import SearchButton from "../ui/SearchButton";
+import SearchButton from "../ui/SearchBar";
 
 const PhotoCard = ({ post }) => {
   const [liked, setLiked] = useState(false);
