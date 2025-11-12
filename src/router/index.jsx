@@ -1,4 +1,5 @@
 import App from "@/App";
+import MarketDetails from "@/components/details/marketDetails/MarketDetails";
 import PhotoDetails from "@/components/details/photoDetails/PhotoDetails";
 import ShortDetails from "@/components/details/shortDetails/ShortDetails";
 import VideoDetails from "@/components/details/videoDetails/VideoDetails";
@@ -86,6 +87,10 @@ export const router = createBrowserRouter([
       {
         path: "market",
         element: <Market />,
+      },
+      {
+        path: "market/:id",
+        element:<MarketDetails></MarketDetails>
       },
       {
         path: "rent",

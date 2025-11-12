@@ -1,30 +1,10 @@
 {
   "mainCategories": [
-    {
-      "id": "cat001",
-      "name": "Mobile",
-      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
-    },
-    {
-      "id": "cat002",
-      "name": "Laptop",
-      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600"
-    },
-    {
-      "id": "cat003",
-      "name": "Camera",
-      "image": "https://images.unsplash.com/photo-1519183071298-a2962eadcdb2?w=600"
-    },
-    {
-      "id": "cat004",
-      "name": "Smart Watch",
-      "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600"
-    },
-    {
-      "id": "cat005",
-      "name": "Headphone",
-      "image": "https://images.unsplash.com/photo-1518444028785-8fbcd101ebb9?w=600"
-    }
+    { "id": "cat001", "name": "Mobile", "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" },
+    { "id": "cat002", "name": "Laptop", "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600" },
+    { "id": "cat003", "name": "Camera", "image": "https://images.unsplash.com/photo-1519183071298-a2962eadcdb2?w=600" },
+    { "id": "cat004", "name": "Smart Watch", "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600" },
+    { "id": "cat005", "name": "Headphone", "image": "https://images.unsplash.com/photo-1518444028785-8fbcd101ebb9?w=600" }
   ],
 
   "subCategories": {
@@ -57,49 +37,106 @@
 
   "products": {
     "Samsung": [
-      { "id": "p001", "productName": "Samsung Galaxy S21", "price": 799, "image": "https://images.unsplash.com/photo-1611222144898-7a97b35a2ea1?w=600" },
-      { "id": "p002", "productName": "Samsung Note 20", "price": 899, "image": "https://images.unsplash.com/photo-1603791452906-bbdb9f902ea7?w=600" }
+      {
+        "id": "p001",
+        "productName": "Samsung Galaxy S21",
+        "price": 799,
+        "brand": "Samsung",
+        "category": "Mobile",
+        "stock": 25,
+        "rating": 4.6,
+        "colors": ["Phantom Gray", "Phantom Violet", "Phantom Silver"],
+        "features": ["8GB RAM", "128GB Storage", "5G Enabled", "Dynamic AMOLED Display"],
+        "description": "Experience next-level performance and style with the Samsung Galaxy S21 featuring a powerful Exynos processor and brilliant camera.",
+        "image": "https://images.unsplash.com/photo-1611222144898-7a97b35a2ea1?w=600",
+        "images": [
+          "https://images.unsplash.com/photo-1611222144898-7a97b35a2ea1?w=600",
+          "https://images.unsplash.com/photo-1603791452906-bbdb9f902ea7?w=600",
+          "https://images.unsplash.com/photo-1611841968534-bc09f04d06d6?w=600"
+        ]
+      },
+      {
+        "id": "p002",
+        "productName": "Samsung Note 20",
+        "price": 899,
+        "brand": "Samsung",
+        "category": "Mobile",
+        "stock": 10,
+        "rating": 4.5,
+        "colors": ["Bronze", "Black", "White"],
+        "features": ["S-Pen", "8GB RAM", "256GB Storage", "AMOLED 120Hz Display"],
+        "description": "A premium device designed for productivity and creativity. The Note 20 gives you the power to do more.",
+        "image": "https://images.unsplash.com/photo-1603791452906-bbdb9f902ea7?w=600"
+      }
     ],
+
     "Apple": [
-      { "id": "p003", "productName": "iPhone 13", "price": 999, "image": "https://images.unsplash.com/photo-1631944404579-68a0cb9a4d36?w=600" },
-      { "id": "p004", "productName": "MacBook Pro M2", "price": 1999, "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600" },
-      { "id": "p005", "productName": "Apple Watch Series 9", "price": 499, "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600" }
+      {
+        "id": "p003",
+        "productName": "iPhone 13",
+        "price": 999,
+        "brand": "Apple",
+        "category": "Mobile",
+        "stock": 30,
+        "rating": 4.8,
+        "colors": ["Blue", "Pink", "Midnight", "Starlight"],
+        "features": ["A15 Bionic Chip", "5G", "Super Retina XDR", "Cinematic Mode"],
+        "description": "The iPhone 13 redefines performance and design with stunning visuals and top-tier processing power.",
+        "image": "https://images.unsplash.com/photo-1631944404579-68a0cb9a4d36?w=600",
+        "images": [
+          "https://images.unsplash.com/photo-1631944404579-68a0cb9a4d36?w=600",
+          "https://images.unsplash.com/photo-1631944330828-7b7c218bf4f0?w=600",
+          "https://images.unsplash.com/photo-1631768822194-368b3a993e5b?w=600"
+        ]
+      }
     ],
-    "Xiaomi": [
-      { "id": "p006", "productName": "Xiaomi Mi 11", "price": 599, "image": "https://images.unsplash.com/photo-1606813902911-cf9a8e26e70b?w=600" },
-      { "id": "p007", "productName": "Redmi Note 12 Pro", "price": 499, "image": "https://images.unsplash.com/photo-1624008915317-1a1d52a83a1f?w=600" }
-    ],
+
     "Dell": [
-      { "id": "p008", "productName": "Dell XPS 15", "price": 1200, "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600" },
-      { "id": "p009", "productName": "Dell Inspiron 14", "price": 899, "image": "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?w=600" }
+      {
+        "id": "p008",
+        "productName": "Dell XPS 15",
+        "price": 1200,
+        "brand": "Dell",
+        "category": "Laptop",
+        "stock": 8,
+        "rating": 4.7,
+        "colors": ["Silver", "Black"],
+        "features": ["Intel i7", "16GB RAM", "512GB SSD", "4K Display"],
+        "description": "The Dell XPS 15 combines premium build quality with exceptional performance for professionals and creators.",
+        "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600"
+      }
     ],
-    "HP": [
-      { "id": "p010", "productName": "HP Spectre x360", "price": 1100, "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600" },
-      { "id": "p011", "productName": "HP Envy 15", "price": 999, "image": "https://images.unsplash.com/photo-1559163179-3a8c62c7432b?w=600" }
-    ],
-    "Canon": [
-      { "id": "p012", "productName": "Canon EOS R5", "price": 3499, "image": "https://images.unsplash.com/photo-1519183071298-a2962eadcdb2?w=600" },
-      { "id": "p013", "productName": "Canon PowerShot G7X", "price": 799, "image": "https://images.unsplash.com/photo-1609601224855-973b54e2dc42?w=600" }
-    ],
-    "Nikon": [
-      { "id": "p014", "productName": "Nikon D850", "price": 2499, "image": "https://images.unsplash.com/photo-1587614382346-4ec71c37cf6f?w=600" },
-      { "id": "p015", "productName": "Nikon Z6 II", "price": 1999, "image": "https://images.unsplash.com/photo-1606813833471-3adf53b6e0c6?w=600" }
-    ],
+
     "Sony": [
-      { "id": "p016", "productName": "Sony Alpha A7 IV", "price": 2499, "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600" },
-      { "id": "p017", "productName": "Sony WH-1000XM5", "price": 399, "image": "https://images.unsplash.com/photo-1518444028785-8fbcd101ebb9?w=600" }
+      {
+        "id": "p016",
+        "productName": "Sony Alpha A7 IV",
+        "price": 2499,
+        "brand": "Sony",
+        "category": "Camera",
+        "stock": 6,
+        "rating": 4.9,
+        "colors": ["Black"],
+        "features": ["33MP Full Frame Sensor", "4K 60p Video", "Fast Hybrid AF"],
+        "description": "Sony Alpha A7 IV delivers unmatched clarity and detail for professionals in photography and videography.",
+        "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600"
+      }
     ],
-    "Fitbit": [
-      { "id": "p018", "productName": "Fitbit Charge 6", "price": 179, "image": "https://images.unsplash.com/photo-1600962815705-30a9d14d9b8b?w=600" },
-      { "id": "p019", "productName": "Fitbit Versa 4", "price": 229, "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07b?w=600" }
-    ],
+
     "Bose": [
-      { "id": "p020", "productName": "Bose QuietComfort 45", "price": 329, "image": "https://images.unsplash.com/photo-1606220838315-056192d5b524?w=600" },
-      { "id": "p021", "productName": "Bose SoundLink II", "price": 279, "image": "https://images.unsplash.com/photo-1599936345391-9e9f1d2e285c?w=600" }
-    ],
-    "JBL": [
-      { "id": "p022", "productName": "JBL Tune 760NC", "price": 199, "image": "https://images.unsplash.com/photo-1577539092930-0c49e5e3e95a?w=600" },
-      { "id": "p023", "productName": "JBL Live 660NC", "price": 249, "image": "https://images.unsplash.com/photo-1589985277991-36e48c8a1782?w=600" }
+      {
+        "id": "p020",
+        "productName": "Bose QuietComfort 45",
+        "price": 329,
+        "brand": "Bose",
+        "category": "Headphone",
+        "stock": 40,
+        "rating": 4.5,
+        "colors": ["Black", "White", "Blue"],
+        "features": ["Active Noise Cancelling", "30H Battery", "Comfort Fit"],
+        "description": "Enjoy pure silence and crystal-clear sound with Bose QuietComfort 45 headphones — perfect for travel and focus.",
+        "image": "https://images.unsplash.com/photo-1606220838315-056192d5b524?w=600"
+      }
     ]
   }
 }

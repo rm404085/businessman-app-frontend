@@ -21,11 +21,18 @@ const ProductList = ({ products }) => {
           <img
             src={prod.image}
             alt={prod.productName}
-            className="w-36 h-36 object-cover rounded mr-4 flex-shrink-0"
+            className="w-36 h-40 object-cover rounded mr-4 flex-shrink-0"
           />
           <div className="flex flex-col">
             <p className="font-medium text-lg">{prod.productName}</p>
+            <p className="text-sm  text-gray-500">{prod.description}</p>
             <p className="text-sm text-gray-600 mt-1">${prod.price}</p>
+             <button
+              
+              className="px-3 py-1 bg-yellow-500 text-white rounded-3xl hover:bg-violet-600 transition"
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       ))}

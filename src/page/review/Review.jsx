@@ -31,7 +31,7 @@ const Review = () => {
   }));
 
   return (
-    <div className="grid gap-5 grid-cols-1 lg:m-4 lg:gap-2 mt-4 lg:grid-cols-2">
+    <div className="grid gap-5 mt-16 grid-cols-1 lg:m-4 lg:gap-2  lg:grid-cols-2">
       {combinedReviews.length > 0 ? (
         combinedReviews.map((review, idx) => (
           <ReviewCard

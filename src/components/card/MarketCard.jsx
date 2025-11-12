@@ -1,44 +1,45 @@
 import { useEffect, useState } from "react";
 import { FcManager } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
-const MarketCard = ({product}) => {
+const MarketCard = ({ product, peopleCount = 10 }) => {
+  const { id, productName, images } = product;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
-    const {productName, images} = product;
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    // Auto slide every 3 second
-
-    useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 3000);
-
     return () => clearInterval(timer);
   }, [images.length]);
 
-
-     const prevImage = () =>
+  const prevImage = () =>
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   const nextImage = () =>
     setCurrentIndex((prev) => (prev + 1) % images.length);
 
-    return(
-      <div className="bg-white  rounded-2xl shadow-md overflow-hidden hover:shadow-lg hover:scale-[1.02] transition">
-      {/* Product name */}
+  const handlePeopleClick = () => {
+    navigate(`/market/${id}?people=${peopleCount}`);
+  };
+
+  return (
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg hover:scale-[1.02] transition">
       <div className="p-3 flex justify-between border-b">
         <h3 className="text-sm md:text-base font-medium truncate text-gray-800">
           {productName}
         </h3>
-        <button className=" px-1 flex gap-1 rounded-full">
-            <span className="text-2xl">
-               <FcManager />
-         </span>
-                
-                 <span>10</span>
+        <button
+          onClick={handlePeopleClick}
+          className="px-1 flex gap-1 rounded-full hover:bg-gray-100 transition"
+        >
+          <span className="text-2xl">
+            <FcManager />
+          </span>
+          <span>{peopleCount}</span>
         </button>
       </div>
 
-      {/* Image Slider */}
       <div className="relative lg:h-60 h-40 bg-gray-50 flex items-center justify-center overflow-hidden">
         <img
           src={images[currentIndex]}
@@ -46,7 +47,6 @@ const MarketCard = ({product}) => {
           className="object-cover w-full h-full transition-all duration-700"
         />
 
-        {/* Manual Controls */}
         {images.length > 1 && (
           <>
             <button
@@ -62,7 +62,6 @@ const MarketCard = ({product}) => {
               ›
             </button>
 
-            {/* Dots */}
             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
               {images.map((_, idx) => (
                 <div
@@ -80,7 +79,7 @@ const MarketCard = ({product}) => {
         )}
       </div>
     </div>
-    )
-}
+  );
+};
 
 export default MarketCard;

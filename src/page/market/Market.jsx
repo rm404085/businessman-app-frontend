@@ -66,6 +66,41 @@ const Market = () => {
           </div>
         ))}
       </div>
+
+      {/* extra copy  */}
+      <div
+        ref={scrollRef}
+        className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory mb-16 pb-4 px-8"
+        style={{ scrollbarWidth: "thin" }}
+      >
+        {products.map((p) => (
+          <div key={p.id} className="snap-start flex-shrink-0 lg:w-80 w-60 card">
+            <MarketCard product={p} />
+          </div>
+        ))}
+      </div>
+      <div
+        ref={scrollRef}
+        className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory mb-16 pb-4 px-8"
+        style={{ scrollbarWidth: "thin" }}
+      >
+        {products.map((p) => (
+          <div key={p.id} className="snap-start flex-shrink-0 lg:w-80 w-60 card">
+            <MarketCard product={p} />
+          </div>
+        ))}
+      </div>
+      <div
+        ref={scrollRef}
+        className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory mb-16 pb-4 px-8"
+        style={{ scrollbarWidth: "thin" }}
+      >
+        {products.map((p) => (
+          <div key={p.id} className="snap-start flex-shrink-0 lg:w-80 w-60 card">
+            <MarketCard product={p} />
+          </div>
+        ))}
+      </div>
     </div>
 
     </div>

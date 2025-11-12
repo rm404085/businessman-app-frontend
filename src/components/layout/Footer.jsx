@@ -51,10 +51,10 @@ const Footer = () => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
         setShowFooter(true);
-        if (isMobile) setShowFirstHalf(false);
+        if (isMobile) setShowFirstHalf(true);
       } else {
         setShowFooter(true);
-        if (isMobile) setShowFirstHalf(true);
+        if (isMobile) setShowFirstHalf(false);
       }
       setLastScrollY(window.scrollY);
     };

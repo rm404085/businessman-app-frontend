@@ -51,7 +51,7 @@ const  Require = () => {
 };
 
   return (
-    <div className="min-h-screen   p-2 md:p-2">
+    <div className="min-h-screen mt-16  p-2 md:p-2">
       <div className="max-w-full mx-auto">
       
 

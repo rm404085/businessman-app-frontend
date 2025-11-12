@@ -81,7 +81,7 @@ export default function Navbar() {
     <header className={`fixed top-0  left-0 right-0 bg-white shadow transition-transform duration-300 z-50 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}>
-      <div className="flex h-16 items-center justify-between gap-4">
+      <div className="flex  h-16 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex flex-1 items-center gap-2">
           {/* Mobile menu trigger */}

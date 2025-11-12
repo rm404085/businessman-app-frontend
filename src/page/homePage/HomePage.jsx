@@ -1,10 +1,11 @@
 import VideoCard from "@/components/card/VideoCard";
+import VedioCategory from "@/components/Category/vedioCategory/VedioCategory";
 
 import { useEffect, useState } from "react";
 
 const HomePage = ({ category, brand }) => {
   const [videos, setVideos] = useState([]);
-   const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/vedio.json")
@@ -35,7 +36,7 @@ const HomePage = ({ category, brand }) => {
     if (loading) {
     // 🔹 Loader দেখাবে যতক্ষণ data আসেনি
     return (
-      <div className="flex items-center gap-4 justify-center h-screen">
+      <div className="flex items-center  gap-4 justify-center h-screen">
         <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-pulse">
           
         </div>
@@ -47,9 +48,12 @@ const HomePage = ({ category, brand }) => {
   }
 
   return (
-    <div>
+    <div className="mt-16">
+      <div>
+        <VedioCategory></VedioCategory>
+      </div>
        
-      <div className="grid grid-cols-1 mt-8 mb-20 sm:grid-cols-2 m-0 md:grid-cols-3 gap-2 ">
+      <div className="grid grid-cols-1  mb-20 sm:grid-cols-2 m-0 md:grid-cols-3 gap-2 ">
       {videos.length > 0 ? (
         videos.map((video) => <VideoCard key={video.id} video={video} />)
       ) : (
