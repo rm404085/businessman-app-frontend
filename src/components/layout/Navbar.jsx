@@ -1,10 +1,9 @@
 import { useEffect, useId, useRef, useState } from "react"
 import {
-  HashIcon,
-  HouseIcon,
+  
   MailIcon,
   SearchIcon,
-  UsersRound,
+  
 } from "lucide-react"
 
 import Logo from "@/components/ui/logo"
@@ -23,7 +22,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import VedioCategory from "../Category/vedioCategory/vedioCategory"
+
 import { AnimatePresence, motion } from "framer-motion"
 
 const teams = ["Acme Inc.", "Origin UI", "Junon"]
