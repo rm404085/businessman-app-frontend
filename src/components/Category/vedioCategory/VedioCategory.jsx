@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router"; 
-import "./Scrollbar.css";
+import "../vedioCategory/ScrollBar.css";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
 const VedioCategory = () => {
