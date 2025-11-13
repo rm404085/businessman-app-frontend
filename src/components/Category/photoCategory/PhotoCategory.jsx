@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { ChevronDown } from "lucide-react";
 
 import "./PhotoScrollBar.css";
-import PhotoModal from "@/components/modal/photoModal/photoModal";
+import PhotoModal from "@/components/modal/photoModal/PhotoModal";
+
 
 const PhotoCategory = () => {
   const [active, setActive] = useState("All");
