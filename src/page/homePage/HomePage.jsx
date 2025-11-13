@@ -53,7 +53,7 @@ const HomePage = ({ category, brand }) => {
         <VedioCategory></VedioCategory>
       </div>
        
-      <div className="grid grid-cols-1  mb-20 sm:grid-cols-2 m-0 md:grid-cols-3 gap-2 ">
+      <div className="grid grid-cols-1  mb-22 sm:grid-cols-2 m-0 md:grid-cols-3 gap-2 ">
       {videos.length > 0 ? (
         videos.map((video) => <VideoCard key={video.id} video={video} />)
       ) : (
